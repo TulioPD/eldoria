@@ -1,0 +1,4288 @@
+fileFormatVersion: 2
+guid: dc5148ed56663a0499e79e08f1c2ed84
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 1
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 1
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638405877593548366
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Bounty-Hunter-Finish_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 893
+      width: 25
+      height: 38
+    spriteID: add10b57c7d16e74db1f5d6c048378ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 893}
+  - name: Bounty-Hunter-Finish_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 939
+      width: 25
+      height: 38
+    spriteID: 16c69f1e3ef66904d9b5e25b08081366
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 939}
+  - name: Bounty-Hunter-Finish_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 710
+      width: 25
+      height: 39
+    spriteID: 7545fcc7e60f20f4f8d673e096487a16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 710}
+  - name: Bounty-Hunter-Finish_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 377
+      width: 24
+      height: 39
+    spriteID: a6b3b336a013dee44969b0e7aff0316a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 377}
+  - name: Bounty-Hunter-Finish_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 729
+      width: 24
+      height: 38
+    spriteID: bfde0cabd4fb80b4385f0b9e8a329f0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 729}
+  - name: Bounty-Hunter-Finish_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 775
+      width: 24
+      height: 38
+    spriteID: ff9530e21dbc1ab47bf8f9111d0eddad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 775}
+  - name: Bounty-Hunter-Finish_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 42
+      width: 23
+      height: 39
+    spriteID: 0a419269ddf1f764bb968b5d5aea2707
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 42}
+  - name: Bounty-Hunter-Finish_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 757
+      width: 25
+      height: 39
+    spriteID: 6e388d98958e1a44e8cff26e886e78b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 757}
+  - name: Bounty-Hunter-Finish_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 667
+      width: 40
+      height: 34
+    spriteID: 9f38fd814213ea2459637d05fbe2c5e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 667}
+  - name: Bounty-Hunter-Finish_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 490
+      width: 40
+      height: 35
+    spriteID: bd8b65944edaac449bc8ce858d79442b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 490}
+  - name: Bounty-Hunter-Finish_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 446
+      width: 39
+      height: 36
+    spriteID: 32ccf7e8a88afe3419e960874ab05ef7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 446}
+  - name: Bounty-Hunter-Finish_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 794
+      width: 38
+      height: 35
+    spriteID: 848e98af29e07bb49969aed976942e23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 794}
+  - name: Bounty-Hunter-Finish_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 94
+      width: 38
+      height: 34
+    spriteID: 775381c8065292e41b87986b5aea68c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 94}
+  - name: Bounty-Hunter-Finish_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 837
+      width: 38
+      height: 35
+    spriteID: 36d90278aa631184b8e0d19a0f8c0eaf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 837}
+  - name: Bounty-Hunter-Finish_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 750
+      width: 37
+      height: 36
+    spriteID: ba30fd03b84572c4191e92333172aefe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 750}
+  - name: Bounty-Hunter-Finish_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 624
+      width: 39
+      height: 35
+    spriteID: c670ce2573d85ea429ef9c1e4ba1ed83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 624}
+  - name: Bounty-Hunter-Finish_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 559
+      width: 22
+      height: 38
+    spriteID: 2c8ca0de339ceee42b68f783c406598a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 559}
+  - name: Bounty-Hunter-Finish_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 77
+      width: 23
+      height: 33
+    spriteID: f11e40b2f43299e42a9e8e511e5d105a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 77}
+  - name: Bounty-Hunter-Finish_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 118
+      width: 23
+      height: 33
+    spriteID: 524396776300c0d4999e2ce01d1cc6df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 118}
+  - name: Bounty-Hunter-Finish_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 159
+      width: 23
+      height: 33
+    spriteID: 3a3144c131fb6d047af3fa06e8627426
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 159}
+  - name: Bounty-Hunter-Finish_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 46
+      width: 27
+      height: 40
+    spriteID: 46d288d493c02f54b9a2eaa81d066fa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 46}
+  - name: Bounty-Hunter-Finish_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 94
+      width: 27
+      height: 40
+    spriteID: 83c7e3527e5f2844a9b58075da8f8bcc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 94}
+  - name: Bounty-Hunter-Finish_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 142
+      width: 27
+      height: 40
+    spriteID: d72a9a69db4586f45b0e7bf78912926c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 142}
+  - name: Bounty-Hunter-Finish_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 821
+      width: 24
+      height: 38
+    spriteID: 2c8d785a7b74a0840ab24606e3b97e82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 821}
+  - name: Bounty-Hunter-Finish_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 424
+      width: 24
+      height: 39
+    spriteID: b67a0108b487eb84e9ba3eca8bfefbb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 424}
+  - name: Bounty-Hunter-Finish_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 520
+      width: 25
+      height: 41
+    spriteID: dd4446eae2ef7444a833c922c7b38aff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 520}
+  - name: Bounty-Hunter-Finish_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 630
+      width: 24
+      height: 37
+    spriteID: aa3e3cae6683bb5498b2e536eff68c8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 630}
+  - name: Bounty-Hunter-Finish_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 471
+      width: 24
+      height: 39
+    spriteID: 67c7115cccf562c47982a6b53552b843
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 471}
+  - name: Bounty-Hunter-Finish_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 190
+      width: 25
+      height: 42
+    spriteID: 9bc5226ab016a9b489e98242ef6db99f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 190}
+  - name: Bounty-Hunter-Finish_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 240
+      width: 25
+      height: 42
+    spriteID: 347dadb57614c1647bebcc7086d6439d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 240}
+  - name: Bounty-Hunter-Finish_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 290
+      width: 25
+      height: 42
+    spriteID: 77c6a5e60b09b8640a26ee68381a3395
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 290}
+  - name: Bounty-Hunter-Finish_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 569
+      width: 24
+      height: 42
+    spriteID: 8cd13d038820ceb44a33eee9e2743b60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 569}
+  - name: Bounty-Hunter-Finish_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 433
+      width: 40
+      height: 31
+    spriteID: 9817bc6c4d9bc3444a194b2e13c6f702
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 433}
+  - name: Bounty-Hunter-Finish_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 263
+      width: 36
+      height: 35
+    spriteID: ba2a871d4273e284997bb00710d71c6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 263}
+  - name: Bounty-Hunter-Finish_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 589
+      width: 37
+      height: 33
+    spriteID: cc93cf57acf576e4eb5c8b292ef786c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 589}
+  - name: Bounty-Hunter-Finish_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 43
+      height: 36
+    spriteID: b2774059a6bb78143bde887cc551309f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: Bounty-Hunter-Finish_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 176
+      width: 39
+      height: 40
+    spriteID: 6735a5a4b2939354ea1d324a7b30b6d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 176}
+  - name: Bounty-Hunter-Finish_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 268
+      width: 40
+      height: 38
+    spriteID: 947fbbcaa39fe6b4f97a2046b3c60627
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 268}
+  - name: Bounty-Hunter-Finish_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 675
+      width: 39
+      height: 31
+    spriteID: 1242504b302b6a2428bf77f25e45239c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 675}
+  - name: Bounty-Hunter-Finish_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 714
+      width: 39
+      height: 31
+    spriteID: 7f731336a2508f44a99a6be8b8c5cc08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 714}
+  - name: Bounty-Hunter-Finish_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 753
+      width: 39
+      height: 31
+    spriteID: 60a7a47cfcb18b843995583ad00f9242
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 753}
+  - name: Bounty-Hunter-Finish_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 314
+      width: 42
+      height: 36
+    spriteID: ff77daf6053f9cc42a3873f9996b1e52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 314}
+  - name: Bounty-Hunter-Finish_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 358
+      width: 42
+      height: 36
+    spriteID: b7b1e7bc78ecf9f4f99385bc769e4d35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 358}
+  - name: Bounty-Hunter-Finish_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 402
+      width: 42
+      height: 36
+    spriteID: 4c5106a02cdc8084e971bac5852cfc24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 402}
+  - name: Bounty-Hunter-Finish_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 136
+      width: 38
+      height: 34
+    spriteID: 6a5ba1f82e507b14691b7c2881384c12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 136}
+  - name: Bounty-Hunter-Finish_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 178
+      width: 34
+      height: 38
+    spriteID: 06d6a946619904c48b18d0bc80818263
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 178}
+  - name: Bounty-Hunter-Finish_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 306
+      width: 35
+      height: 36
+    spriteID: a89786b2e164d6848a67f407d7665c4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 306}
+  - name: Bounty-Hunter-Finish_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 4
+      width: 41
+      height: 27
+    spriteID: 7bc20f46b1c2aea488103b493da2e7be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 905
+      width: 36
+      height: 32
+    spriteID: f1a8e78a7f393124f981d159861938f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 905}
+  - name: Bounty-Hunter-Finish_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 4
+      width: 37
+      height: 30
+    spriteID: 8ca5dda37787f8143b2629f42a87b3ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 283
+      width: 25
+      height: 35
+    spriteID: cc9141a4b13134d428838b028476b9b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 283}
+  - name: Bounty-Hunter-Finish_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 902
+      width: 25
+      height: 31
+    spriteID: 14c66e672c899a84193811b1d80dd42e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 902}
+  - name: Bounty-Hunter-Finish_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 781
+      width: 25
+      height: 32
+    spriteID: 76a6ea5eed5cd584b9c38078800cc43d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 781}
+  - name: Bounty-Hunter-Finish_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 821
+      width: 25
+      height: 32
+    spriteID: 2a9a5e25c8403d443b58d306adbb309d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 821}
+  - name: Bounty-Hunter-Finish_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 332
+      width: 25
+      height: 30
+    spriteID: e13f9f6af04831949be9475e88ccbd3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 332}
+  - name: Bounty-Hunter-Finish_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 472
+      width: 40
+      height: 31
+    spriteID: 5c1330c43249cc34ebe1fad30e6b0213
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 472}
+  - name: Bounty-Hunter-Finish_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 39
+      width: 40
+      height: 27
+    spriteID: 536f6492469ea7d4e928a36877989104
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 39}
+  - name: Bounty-Hunter-Finish_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 74
+      width: 40
+      height: 27
+    spriteID: 9b56503c0e8d5ae4595870e6043ea8a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 74}
+  - name: Bounty-Hunter-Finish_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 147
+      width: 40
+      height: 26
+    spriteID: e4c871076ccb72840903d91eab94e96e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 147}
+  - name: Bounty-Hunter-Finish_Frame_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 181
+      width: 40
+      height: 26
+    spriteID: 8fa027080de97774885773513cde4c0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 181}
+  - name: Bounty-Hunter-Finish_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 285
+      width: 25
+      height: 38
+    spriteID: 3701c64514b95434ab42d997db78a688
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 285}
+  - name: Bounty-Hunter-Finish_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 619
+      width: 27
+      height: 37
+    spriteID: eeb4e466378f7c64b8e89dc4ff2f6381
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 619}
+  - name: Bounty-Hunter-Finish_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 484
+      width: 24
+      height: 35
+    spriteID: 6207d134556c5f84cac86680cb388108
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 484}
+  - name: Bounty-Hunter-Finish_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 571
+      width: 23
+      height: 29
+    spriteID: 371bbe79ba4d3ba45a694bc1eaea2d98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 571}
+  - name: Bounty-Hunter-Finish_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 326
+      width: 25
+      height: 35
+    spriteID: afdd05d2354f08547b24042ad13c47b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 326}
+  - name: Bounty-Hunter-Finish_Frame_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 499
+      width: 24
+      height: 30
+    spriteID: 8bf379fe78d184f4fbff452f8911c277
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 499}
+  - name: Bounty-Hunter-Finish_Frame_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 941
+      width: 25
+      height: 31
+    spriteID: 6e38335c5f77cfb4b8b6e1e991e12ab9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 941}
+  - name: Bounty-Hunter-Finish_Frame_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 369
+      width: 25
+      height: 35
+    spriteID: 9883d6200121c884084be9eea75d9978
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 369}
+  - name: Bounty-Hunter-Finish_Frame_133
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 518
+      width: 29
+      height: 32
+    spriteID: e7c8d69f9a96903468b0b71a0247dca7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 518}
+  - name: Bounty-Hunter-Finish_Frame_134
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 985
+      width: 30
+      height: 31
+    spriteID: 74c993e1a53828b4fb9ec0d199423747
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 985}
+  - name: Bounty-Hunter-Finish_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 605
+      width: 22
+      height: 38
+    spriteID: dcf02c55625dbd9468a4ebfec339adcb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 605}
+  - name: Bounty-Hunter-Finish_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 89
+      width: 23
+      height: 39
+    spriteID: 7c9360cf386f07143aacdfaecd743665
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 89}
+  - name: Bounty-Hunter-Finish_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 697
+      width: 25
+      height: 33
+    spriteID: 85b166975bed2624abeaf859e869cdc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 697}
+  - name: Bounty-Hunter-Finish_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 664
+      width: 26
+      height: 38
+    spriteID: bb1b2774a1f2f8d4089f9625d9109c16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 664}
+  - name: Bounty-Hunter-Finish_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 331
+      width: 25
+      height: 38
+    spriteID: f10ce175c00588249ba3e2f8af8a5361
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 331}
+  - name: Bounty-Hunter-Finish_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 558
+      width: 25
+      height: 37
+    spriteID: 36e0d85b3ca0ddb4c9e92b887b1a50ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 558}
+  - name: Bounty-Hunter-Finish_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 861
+      width: 24
+      height: 33
+    spriteID: 4f8624fa1225b2f48912ffbdc360bd4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 861}
+  - name: Bounty-Hunter-Finish_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 867
+      width: 24
+      height: 38
+    spriteID: e95cb506d584eb948bdfec65abe862fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 867}
+  - name: Bounty-Hunter-Finish_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 392
+      width: 38
+      height: 33
+    spriteID: 09f720b0357364048ba6ea7d92509054
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 392}
+  - name: Bounty-Hunter-Finish_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 880
+      width: 38
+      height: 35
+    spriteID: 41113ad027967b547aeb7bc386d0cecd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 880}
+  - name: Bounty-Hunter-Finish_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 792
+      width: 41
+      height: 29
+    spriteID: 92157fcac50847d41b80a8362948d647
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 792}
+  - name: Bounty-Hunter-Finish_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 511
+      width: 40
+      height: 31
+    spriteID: 81422089ea4b8b24ea8d06256687211c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 511}
+  - name: Bounty-Hunter-Finish_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 709
+      width: 41
+      height: 33
+    spriteID: 2094912a2a1ef5d4685b36d81ccb3881
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 709}
+  - name: Bounty-Hunter-Finish_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 533
+      width: 40
+      height: 35
+    spriteID: f9de09e63cff57b438702d138676222b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 533}
+  - name: Bounty-Hunter-Finish_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 868
+      width: 40
+      height: 29
+    spriteID: 62af183108660764c872ad2de4e91a37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 868}
+  - name: Bounty-Hunter-Finish_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 550
+      width: 40
+      height: 31
+    spriteID: ee8e0715e3b98564ba8eb06c59894bf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 550}
+  - name: Bounty-Hunter-Finish_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 428
+      width: 27
+      height: 38
+    spriteID: 05937090ad7a5b0479475813003a7b21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 428}
+  - name: Bounty-Hunter-Finish_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 340
+      width: 30
+      height: 35
+    spriteID: e4eda57d62538db4b8cfc33d77ce36b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 340}
+  - name: Bounty-Hunter-Finish_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 383
+      width: 28
+      height: 37
+    spriteID: 8e8368aca3413dd40a8f520513029d45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 383}
+  - name: Bounty-Hunter-Finish_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 527
+      width: 35
+      height: 24
+    spriteID: 1f7aa91b73a65ae4eada9c4ed8f68196
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 527}
+  - name: Bounty-Hunter-Finish_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 4
+      width: 39
+      height: 11
+    spriteID: 5a18e7e0405e8164d9625250119df446
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1010
+      width: 38
+      height: 10
+    spriteID: a9e86e63138b09a48b6be9aaf3306271
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1010}
+  - name: Bounty-Hunter-Finish_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 23
+      width: 39
+      height: 9
+    spriteID: 9bbc1bcb18fe91f488a9098ab4b33395
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 23}
+  - name: Bounty-Hunter-Finish_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 412
+      width: 27
+      height: 32
+    spriteID: 9ffdbb419f0d7af488e197af00b755d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 412}
+  - name: Bounty-Hunter-Finish_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 603
+      width: 27
+      height: 34
+    spriteID: f146bcab0f93a1a4a9d59fc37e34beab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 603}
+  - name: Bounty-Hunter-Finish_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 645
+      width: 27
+      height: 34
+    spriteID: b4900a714d485154084c7cce26b163be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 645}
+  - name: Bounty-Hunter-Finish_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 687
+      width: 27
+      height: 34
+    spriteID: 6305d5e547c38714d9c1852c2181a0eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 687}
+  - name: Bounty-Hunter-Finish_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 200
+      width: 21
+      height: 36
+    spriteID: 136a70a347726d94c9777488cdf235c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 200}
+  - name: Bounty-Hunter-Finish_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 244
+      width: 21
+      height: 36
+    spriteID: d3f74400753ad9742af4a2eb95c9f8c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 244}
+  - name: Bounty-Hunter-Finish_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 288
+      width: 21
+      height: 36
+    spriteID: 541c8ff0f7ef9a2419fbd4166d217692
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 288}
+  - name: Bounty-Hunter-Finish_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 608
+      width: 15
+      height: 38
+    spriteID: af93c1754c8d68246833e7d5560dea3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 608}
+  - name: Bounty-Hunter-Finish_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 654
+      width: 15
+      height: 38
+    spriteID: 9ed1951c5d7910b4cb8424016020e504
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 654}
+  - name: Bounty-Hunter-Finish_Frame_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 700
+      width: 15
+      height: 38
+    spriteID: 2cb2ce09a57542445a32c2dfc461dd4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 700}
+  - name: Bounty-Hunter-Finish_Frame_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 746
+      width: 15
+      height: 38
+    spriteID: 95f668870d9e8ef4a8b773c539915b95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 746}
+  - name: Bounty-Hunter-Finish_Frame_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 454
+      width: 20
+      height: 37
+    spriteID: 3561de0cecfbe2741b5615391762b1f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 454}
+  - name: Bounty-Hunter-Finish_Frame_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 136
+      width: 33
+      height: 27
+    spriteID: 5f8238ab91c96824fbfc973d4c016a6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 136}
+  - name: Bounty-Hunter-Finish_Frame_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 171
+      width: 33
+      height: 27
+    spriteID: 5b99700462957094d928ba127673ef60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 171}
+  - name: Bounty-Hunter-Finish_Frame_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 206
+      width: 33
+      height: 27
+    spriteID: dc8c330f5cb3ddf4187643eddfdd7b49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 206}
+  - name: Bounty-Hunter-Finish_Frame_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 4
+      width: 47
+      height: 22
+    spriteID: 0a1aefbc9cf2e14469aac44c8f0e4800
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 999
+      width: 28
+      height: 18
+    spriteID: 8d841288cde79e84298f7446a39ae973
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 999}
+  - name: Bounty-Hunter-Finish_Frame_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 905
+      width: 21
+      height: 21
+    spriteID: 08432e4006d970040af15c5cbbc70693
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 905}
+  - name: Bounty-Hunter-Finish_Frame_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 792
+      width: 22
+      height: 20
+    spriteID: 36cb3dda32976c745a1d4a81ef2ebfe5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 792}
+  - name: Bounty-Hunter-Finish_Frame_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 820
+      width: 22
+      height: 20
+    spriteID: 1ed213ad42ac38348bd0223eb09010c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 820}
+  - name: Bounty-Hunter-Finish_Frame_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 370
+      width: 22
+      height: 34
+    spriteID: 741d83e2bd4bcc04da980c37ff7b55e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 370}
+  - name: Bounty-Hunter-Finish_Frame_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 306
+      width: 22
+      height: 35
+    spriteID: 3488f82d14ce68940b6e985f1202f762
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 306}
+  - name: Bounty-Hunter-Finish_Frame_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 651
+      width: 22
+      height: 38
+    spriteID: 2d7408f1479584246aa9b046cd69c8c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 651}
+  - name: Bounty-Hunter-Finish_Frame_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 980
+      width: 22
+      height: 35
+    spriteID: f39a8843840749941a9c48fb1c324c71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 980}
+  - name: Bounty-Hunter-Finish_Frame_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 412
+      width: 22
+      height: 34
+    spriteID: 0c96c22c3c198494fbf3d7ceafb93e67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 412}
+  - name: Bounty-Hunter-Finish_Frame_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 34
+      width: 22
+      height: 35
+    spriteID: 25a83b8371396204388588eb8f888ce9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 34}
+  - name: Bounty-Hunter-Finish_Frame_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 178
+      width: 23
+      height: 38
+    spriteID: 129c8478ec5e0e646b2c916d90832f1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 178}
+  - name: Bounty-Hunter-Finish_Frame_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 738
+      width: 23
+      height: 35
+    spriteID: ebba700b95fc74640ae19411f1a15730
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 738}
+  - name: Bounty-Hunter-Finish_Frame_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 474
+      width: 27
+      height: 38
+    spriteID: 7d9c135cfafe5ca40b1b2c2d32b33275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 474}
+  - name: Bounty-Hunter-Finish_Frame_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 848
+      width: 26
+      height: 37
+    spriteID: db7563c7b6a7f844c9311fa1751d6102
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 848}
+  - name: Bounty-Hunter-Finish_Frame_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 913
+      width: 26
+      height: 35
+    spriteID: 83e2b8838802a59418b83f4e6e0cb7b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 913}
+  - name: Bounty-Hunter-Finish_Frame_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 56
+      height: 52
+    spriteID: 570999836fa0a5a4e981bb70c7f4098f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 64
+      width: 47
+      height: 51
+    spriteID: b62d405a82bfc234c863a3f129502452
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 64}
+  - name: Bounty-Hunter-Finish_Frame_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 829
+      width: 38
+      height: 31
+    spriteID: a75b2fb552534a84098792b9d5261e7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 829}
+  - name: Bounty-Hunter-Finish_Frame_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 215
+      width: 34
+      height: 30
+    spriteID: 9fabe238911adf54e9ac5107882a0599
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 215}
+  - name: Bounty-Hunter-Finish_Frame_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 109
+      width: 35
+      height: 30
+    spriteID: 42ab0823d0bc307499318e9379009fc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 109}
+  - name: Bounty-Hunter-Finish_Frame_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 576
+      width: 35
+      height: 40
+    spriteID: 78fe091eebbd9b742947065eb45f48a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 576}
+  - name: Bounty-Hunter-Finish_Frame_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 123
+      width: 51
+      height: 45
+    spriteID: 96f2ec156b5f3374b8fe14434456e349
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 123}
+  - name: Bounty-Hunter-Finish_Frame_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 923
+      width: 36
+      height: 36
+    spriteID: 895286d92eced88408cfefcd2d203a0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 923}
+  - name: Bounty-Hunter-Finish_Frame_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 967
+      width: 37
+      height: 35
+    spriteID: 43dcf6962ba6a8c408969c52f109ceea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 967}
+  - name: Bounty-Hunter-Finish_Frame_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 804
+      width: 27
+      height: 36
+    spriteID: bc4dd419b337d004993facc6d147498c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 804}
+  - name: Bounty-Hunter-Finish_Frame_132
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 241
+      width: 26
+      height: 34
+    spriteID: c95bb7e33791e054fb7fb4e7c5c0987c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 241}
+  - name: Bounty-Hunter-Finish_Frame_135
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 253
+      width: 41
+      height: 24
+    spriteID: 7debb08d67fbc0741a735b0af41204d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 253}
+  - name: Bounty-Hunter-Finish_Frame_136
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 452
+      width: 36
+      height: 24
+    spriteID: 719bb2c094ddfa140a9b93a119299827
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 452}
+  - name: Bounty-Hunter-Finish_Frame_138
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 537
+      width: 27
+      height: 26
+    spriteID: 0a61ecff7058bbe4b980fdee31252a14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 537}
+  - name: Bounty-Hunter-Finish_Frame_139
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 224
+      width: 41
+      height: 31
+    spriteID: 98aec28d3679d0d4790ba36b9678ad8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 224}
+  - name: Bounty-Hunter-Finish_Frame_140
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 945
+      width: 38
+      height: 30
+    spriteID: ae6e9bd91bb029a46b46dc6a436e2f7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 945}
+  - name: Bounty-Hunter-Finish_Frame_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 983
+      width: 38
+      height: 30
+    spriteID: 9e6d2441b7510174888a23cb3bbe9c5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 983}
+  - name: Bounty-Hunter-Finish_Frame_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 956
+      width: 26
+      height: 35
+    spriteID: 268ae0d8321354e40a8784c02c400a3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 956}
+  - name: Bounty-Hunter-Finish_Frame_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 630
+      width: 33
+      height: 37
+    spriteID: 500527c651c4d8f408ba315fac85c393
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 630}
+  - name: Bounty-Hunter-Finish_Frame_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 65
+      height: 37
+    spriteID: 35d5b102ca263464ca992c4cd7d746fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 49
+      width: 58
+      height: 37
+    spriteID: 2af6940c6c4e46c41a7b9b83bd56a1f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 49}
+  - name: Bounty-Hunter-Finish_Frame_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 4
+      width: 33
+      height: 34
+    spriteID: ead99d3ac5b82954fb59d1dc5e25c9e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 4}
+  - name: Bounty-Hunter-Finish_Frame_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 350
+      width: 37
+      height: 34
+    spriteID: d7c9c47f9b8463a4eb6d1d11265ebfd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 350}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1714508318
+    name: Bounty-Hunter-Finish
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Bounty-Hunter-Finish_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 1
+        width: 25
+        height: 38
+      spriteId: add10b57c7d16e74db1f5d6c048378ea
+    - name: Bounty-Hunter-Finish_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 14
+        y: 1
+        width: 25
+        height: 38
+      spriteId: 16c69f1e3ef66904d9b5e25b08081366
+    - name: Bounty-Hunter-Finish_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 14
+        y: 1
+        width: 25
+        height: 39
+      spriteId: 7545fcc7e60f20f4f8d673e096487a16
+    - name: Bounty-Hunter-Finish_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 14
+        y: 1
+        width: 24
+        height: 39
+      spriteId: a6b3b336a013dee44969b0e7aff0316a
+    - name: Bounty-Hunter-Finish_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 1
+        width: 24
+        height: 38
+      spriteId: bfde0cabd4fb80b4385f0b9e8a329f0d
+    - name: Bounty-Hunter-Finish_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 14
+        y: 1
+        width: 24
+        height: 38
+      spriteId: ff9530e21dbc1ab47bf8f9111d0eddad
+    - name: Bounty-Hunter-Finish_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 15
+        y: 1
+        width: 23
+        height: 39
+      spriteId: 0a419269ddf1f764bb968b5d5aea2707
+    - name: Bounty-Hunter-Finish_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 14
+        y: 1
+        width: 25
+        height: 39
+      spriteId: 6e388d98958e1a44e8cff26e886e78b8
+    - name: Bounty-Hunter-Finish_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 14
+        y: 1
+        width: 40
+        height: 34
+      spriteId: 9f38fd814213ea2459637d05fbe2c5e5
+    - name: Bounty-Hunter-Finish_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 14
+        y: 1
+        width: 40
+        height: 35
+      spriteId: bd8b65944edaac449bc8ce858d79442b
+    - name: Bounty-Hunter-Finish_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 14
+        y: 1
+        width: 39
+        height: 36
+      spriteId: 32ccf7e8a88afe3419e960874ab05ef7
+    - name: Bounty-Hunter-Finish_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 14
+        y: 1
+        width: 38
+        height: 35
+      spriteId: 848e98af29e07bb49969aed976942e23
+    - name: Bounty-Hunter-Finish_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 14
+        y: 1
+        width: 38
+        height: 34
+      spriteId: 775381c8065292e41b87986b5aea68c1
+    - name: Bounty-Hunter-Finish_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 14
+        y: 1
+        width: 38
+        height: 35
+      spriteId: 36d90278aa631184b8e0d19a0f8c0eaf
+    - name: Bounty-Hunter-Finish_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 15
+        y: 1
+        width: 37
+        height: 36
+      spriteId: ba30fd03b84572c4191e92333172aefe
+    - name: Bounty-Hunter-Finish_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 14
+        y: 1
+        width: 39
+        height: 35
+      spriteId: c670ce2573d85ea429ef9c1e4ba1ed83
+    - name: Bounty-Hunter-Finish_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 15
+        y: 2
+        width: 22
+        height: 38
+      spriteId: 2c8ca0de339ceee42b68f783c406598a
+    - name: Bounty-Hunter-Finish_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 14
+        y: 8
+        width: 23
+        height: 33
+      spriteId: f11e40b2f43299e42a9e8e511e5d105a
+    - name: Bounty-Hunter-Finish_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 14
+        y: 8
+        width: 23
+        height: 33
+      spriteId: 524396776300c0d4999e2ce01d1cc6df
+    - name: Bounty-Hunter-Finish_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 14
+        y: 8
+        width: 23
+        height: 33
+      spriteId: 3a3144c131fb6d047af3fa06e8627426
+    - name: Bounty-Hunter-Finish_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 12
+        y: 3
+        width: 27
+        height: 40
+      spriteId: 46d288d493c02f54b9a2eaa81d066fa8
+    - name: Bounty-Hunter-Finish_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 12
+        y: 3
+        width: 27
+        height: 40
+      spriteId: 83c7e3527e5f2844a9b58075da8f8bcc
+    - name: Bounty-Hunter-Finish_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 12
+        y: 3
+        width: 27
+        height: 40
+      spriteId: d72a9a69db4586f45b0e7bf78912926c
+    - name: Bounty-Hunter-Finish_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 15
+        y: 1
+        width: 24
+        height: 38
+      spriteId: 2c8d785a7b74a0840ab24606e3b97e82
+    - name: Bounty-Hunter-Finish_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 15
+        y: 1
+        width: 24
+        height: 39
+      spriteId: b67a0108b487eb84e9ba3eca8bfefbb7
+    - name: Bounty-Hunter-Finish_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 14
+        y: 1
+        width: 25
+        height: 41
+      spriteId: dd4446eae2ef7444a833c922c7b38aff
+    - name: Bounty-Hunter-Finish_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 15
+        y: 4
+        width: 24
+        height: 37
+      spriteId: aa3e3cae6683bb5498b2e536eff68c8e
+    - name: Bounty-Hunter-Finish_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 15
+        y: 3
+        width: 24
+        height: 39
+      spriteId: 67c7115cccf562c47982a6b53552b843
+    - name: Bounty-Hunter-Finish_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 14
+        y: 2
+        width: 25
+        height: 42
+      spriteId: 9bc5226ab016a9b489e98242ef6db99f
+    - name: Bounty-Hunter-Finish_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 14
+        y: 2
+        width: 25
+        height: 42
+      spriteId: 347dadb57614c1647bebcc7086d6439d
+    - name: Bounty-Hunter-Finish_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 14
+        y: 2
+        width: 25
+        height: 42
+      spriteId: 77c6a5e60b09b8640a26ee68381a3395
+    - name: Bounty-Hunter-Finish_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 14
+        y: 2
+        width: 24
+        height: 42
+      spriteId: 8cd13d038820ceb44a33eee9e2743b60
+    - name: Bounty-Hunter-Finish_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 14
+        y: 8
+        width: 40
+        height: 31
+      spriteId: 9817bc6c4d9bc3444a194b2e13c6f702
+    - name: Bounty-Hunter-Finish_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 14
+        y: 8
+        width: 36
+        height: 35
+      spriteId: ba2a871d4273e284997bb00710d71c6e
+    - name: Bounty-Hunter-Finish_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 14
+        y: 8
+        width: 37
+        height: 33
+      spriteId: cc93cf57acf576e4eb5c8b292ef786c8
+    - name: Bounty-Hunter-Finish_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 12
+        y: 3
+        width: 43
+        height: 36
+      spriteId: b2774059a6bb78143bde887cc551309f
+    - name: Bounty-Hunter-Finish_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 12
+        y: 3
+        width: 39
+        height: 40
+      spriteId: 6735a5a4b2939354ea1d324a7b30b6d4
+    - name: Bounty-Hunter-Finish_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 12
+        y: 3
+        width: 40
+        height: 38
+      spriteId: 947fbbcaa39fe6b4f97a2046b3c60627
+    - name: Bounty-Hunter-Finish_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 14
+        y: 8
+        width: 39
+        height: 31
+      spriteId: 1242504b302b6a2428bf77f25e45239c
+    - name: Bounty-Hunter-Finish_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 14
+        y: 8
+        width: 39
+        height: 31
+      spriteId: 7f731336a2508f44a99a6be8b8c5cc08
+    - name: Bounty-Hunter-Finish_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 14
+        y: 8
+        width: 39
+        height: 31
+      spriteId: 60a7a47cfcb18b843995583ad00f9242
+    - name: Bounty-Hunter-Finish_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 12
+        y: 3
+        width: 42
+        height: 36
+      spriteId: ff77daf6053f9cc42a3873f9996b1e52
+    - name: Bounty-Hunter-Finish_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 12
+        y: 3
+        width: 42
+        height: 36
+      spriteId: b7b1e7bc78ecf9f4f99385bc769e4d35
+    - name: Bounty-Hunter-Finish_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 12
+        y: 3
+        width: 42
+        height: 36
+      spriteId: 4c5106a02cdc8084e971bac5852cfc24
+    - name: Bounty-Hunter-Finish_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 15
+        y: 1
+        width: 38
+        height: 34
+      spriteId: 6a5ba1f82e507b14691b7c2881384c12
+    - name: Bounty-Hunter-Finish_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 15
+        y: 1
+        width: 34
+        height: 38
+      spriteId: 06d6a946619904c48b18d0bc80818263
+    - name: Bounty-Hunter-Finish_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 15
+        y: 1
+        width: 35
+        height: 36
+      spriteId: a89786b2e164d6848a67f407d7665c4d
+    - name: Bounty-Hunter-Finish_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 16
+        y: 1
+        width: 41
+        height: 27
+      spriteId: 7bc20f46b1c2aea488103b493da2e7be
+    - name: Bounty-Hunter-Finish_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 17
+        y: 1
+        width: 36
+        height: 32
+      spriteId: f1a8e78a7f393124f981d159861938f3
+    - name: Bounty-Hunter-Finish_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 17
+        y: 1
+        width: 37
+        height: 30
+      spriteId: 8ca5dda37787f8143b2629f42a87b3ca
+    - name: Bounty-Hunter-Finish_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 16
+        y: 1
+        width: 25
+        height: 35
+      spriteId: cc9141a4b13134d428838b028476b9b3
+    - name: Bounty-Hunter-Finish_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 17
+        y: 1
+        width: 25
+        height: 31
+      spriteId: 14c66e672c899a84193811b1d80dd42e
+    - name: Bounty-Hunter-Finish_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 17
+        y: 1
+        width: 25
+        height: 32
+      spriteId: 76a6ea5eed5cd584b9c38078800cc43d
+    - name: Bounty-Hunter-Finish_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 17
+        y: 1
+        width: 25
+        height: 32
+      spriteId: 2a9a5e25c8403d443b58d306adbb309d
+    - name: Bounty-Hunter-Finish_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 17
+        y: 1
+        width: 25
+        height: 30
+      spriteId: e13f9f6af04831949be9475e88ccbd3c
+    - name: Bounty-Hunter-Finish_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 16
+        y: 1
+        width: 40
+        height: 31
+      spriteId: 5c1330c43249cc34ebe1fad30e6b0213
+    - name: Bounty-Hunter-Finish_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 17
+        y: 1
+        width: 40
+        height: 27
+      spriteId: 536f6492469ea7d4e928a36877989104
+    - name: Bounty-Hunter-Finish_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 17
+        y: 1
+        width: 40
+        height: 27
+      spriteId: 9b56503c0e8d5ae4595870e6043ea8a5
+    - name: Bounty-Hunter-Finish_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 17
+        y: 1
+        width: 40
+        height: 26
+      spriteId: e4c871076ccb72840903d91eab94e96e
+    - name: Bounty-Hunter-Finish_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 17
+        y: 1
+        width: 40
+        height: 26
+      spriteId: 8fa027080de97774885773513cde4c0c
+    - name: Bounty-Hunter-Finish_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 15
+        y: 1
+        width: 25
+        height: 38
+      spriteId: 3701c64514b95434ab42d997db78a688
+    - name: Bounty-Hunter-Finish_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 13
+        y: 1
+        width: 27
+        height: 37
+      spriteId: eeb4e466378f7c64b8e89dc4ff2f6381
+    - name: Bounty-Hunter-Finish_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 15
+        y: 1
+        width: 24
+        height: 35
+      spriteId: 6207d134556c5f84cac86680cb388108
+    - name: Bounty-Hunter-Finish_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 18
+        y: 1
+        width: 23
+        height: 29
+      spriteId: 371bbe79ba4d3ba45a694bc1eaea2d98
+    - name: Bounty-Hunter-Finish_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 16
+        y: 1
+        width: 25
+        height: 35
+      spriteId: afdd05d2354f08547b24042ad13c47b5
+    - name: Bounty-Hunter-Finish_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 18
+        y: 1
+        width: 24
+        height: 30
+      spriteId: 8bf379fe78d184f4fbff452f8911c277
+    - name: Bounty-Hunter-Finish_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 17
+        y: 1
+        width: 25
+        height: 31
+      spriteId: 6e38335c5f77cfb4b8b6e1e991e12ab9
+    - name: Bounty-Hunter-Finish_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 16
+        y: 1
+        width: 25
+        height: 35
+      spriteId: 9883d6200121c884084be9eea75d9978
+    - name: Bounty-Hunter-Finish_Frame_133
+      frameIndex: 133
+      cellRect:
+        x: 14
+        y: 1
+        width: 29
+        height: 32
+      spriteId: e7c8d69f9a96903468b0b71a0247dca7
+    - name: Bounty-Hunter-Finish_Frame_134
+      frameIndex: 134
+      cellRect:
+        x: 14
+        y: 1
+        width: 30
+        height: 31
+      spriteId: 74c993e1a53828b4fb9ec0d199423747
+    - name: Bounty-Hunter-Finish_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 13
+        y: 1
+        width: 22
+        height: 38
+      spriteId: dcf02c55625dbd9468a4ebfec339adcb
+    - name: Bounty-Hunter-Finish_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 12
+        y: 1
+        width: 23
+        height: 39
+      spriteId: 7c9360cf386f07143aacdfaecd743665
+    - name: Bounty-Hunter-Finish_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 10
+        y: 6
+        width: 25
+        height: 33
+      spriteId: 85b166975bed2624abeaf859e869cdc9
+    - name: Bounty-Hunter-Finish_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 11
+        y: 2
+        width: 26
+        height: 38
+      spriteId: bb1b2774a1f2f8d4089f9625d9109c16
+    - name: Bounty-Hunter-Finish_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 11
+        y: 1
+        width: 25
+        height: 38
+      spriteId: f10ce175c00588249ba3e2f8af8a5361
+    - name: Bounty-Hunter-Finish_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 11
+        y: 1
+        width: 25
+        height: 37
+      spriteId: 36e0d85b3ca0ddb4c9e92b887b1a50ef
+    - name: Bounty-Hunter-Finish_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 12
+        y: 6
+        width: 24
+        height: 33
+      spriteId: 4f8624fa1225b2f48912ffbdc360bd4b
+    - name: Bounty-Hunter-Finish_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 12
+        y: 2
+        width: 24
+        height: 38
+      spriteId: e95cb506d584eb948bdfec65abe862fd
+    - name: Bounty-Hunter-Finish_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 13
+        y: 1
+        width: 38
+        height: 33
+      spriteId: 09f720b0357364048ba6ea7d92509054
+    - name: Bounty-Hunter-Finish_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 12
+        y: 1
+        width: 38
+        height: 35
+      spriteId: 41113ad027967b547aeb7bc386d0cecd
+    - name: Bounty-Hunter-Finish_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 10
+        y: 6
+        width: 41
+        height: 29
+      spriteId: 92157fcac50847d41b80a8362948d647
+    - name: Bounty-Hunter-Finish_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 11
+        y: 2
+        width: 40
+        height: 31
+      spriteId: 81422089ea4b8b24ea8d06256687211c
+    - name: Bounty-Hunter-Finish_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 11
+        y: 1
+        width: 41
+        height: 33
+      spriteId: 2094912a2a1ef5d4685b36d81ccb3881
+    - name: Bounty-Hunter-Finish_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 11
+        y: 1
+        width: 40
+        height: 35
+      spriteId: f9de09e63cff57b438702d138676222b
+    - name: Bounty-Hunter-Finish_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 12
+        y: 6
+        width: 40
+        height: 29
+      spriteId: 62af183108660764c872ad2de4e91a37
+    - name: Bounty-Hunter-Finish_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 12
+        y: 2
+        width: 40
+        height: 31
+      spriteId: ee8e0715e3b98564ba8eb06c59894bf9
+    - name: Bounty-Hunter-Finish_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 9
+        y: 2
+        width: 27
+        height: 38
+      spriteId: 05937090ad7a5b0479475813003a7b21
+    - name: Bounty-Hunter-Finish_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 8
+        y: 5
+        width: 30
+        height: 35
+      spriteId: e4eda57d62538db4b8cfc33d77ce36b1
+    - name: Bounty-Hunter-Finish_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 5
+        y: 1
+        width: 28
+        height: 37
+      spriteId: 8e8368aca3413dd40a8f520513029d45
+    - name: Bounty-Hunter-Finish_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 5
+        y: 1
+        width: 35
+        height: 24
+      spriteId: 1f7aa91b73a65ae4eada9c4ed8f68196
+    - name: Bounty-Hunter-Finish_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 5
+        y: 1
+        width: 39
+        height: 11
+      spriteId: 5a18e7e0405e8164d9625250119df446
+    - name: Bounty-Hunter-Finish_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 5
+        y: 1
+        width: 38
+        height: 10
+      spriteId: a9e86e63138b09a48b6be9aaf3306271
+    - name: Bounty-Hunter-Finish_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 5
+        y: 1
+        width: 39
+        height: 9
+      spriteId: 9bbc1bcb18fe91f488a9098ab4b33395
+    - name: Bounty-Hunter-Finish_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 18
+        y: 4
+        width: 27
+        height: 32
+      spriteId: 9ffdbb419f0d7af488e197af00b755d0
+    - name: Bounty-Hunter-Finish_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 19
+        y: 2
+        width: 27
+        height: 34
+      spriteId: f146bcab0f93a1a4a9d59fc37e34beab
+    - name: Bounty-Hunter-Finish_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 19
+        y: 2
+        width: 27
+        height: 34
+      spriteId: b4900a714d485154084c7cce26b163be
+    - name: Bounty-Hunter-Finish_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 19
+        y: 2
+        width: 27
+        height: 34
+      spriteId: 6305d5e547c38714d9c1852c2181a0eb
+    - name: Bounty-Hunter-Finish_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 19
+        y: 1
+        width: 21
+        height: 36
+      spriteId: 136a70a347726d94c9777488cdf235c2
+    - name: Bounty-Hunter-Finish_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 19
+        y: 1
+        width: 21
+        height: 36
+      spriteId: d3f74400753ad9742af4a2eb95c9f8c1
+    - name: Bounty-Hunter-Finish_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 19
+        y: 1
+        width: 21
+        height: 36
+      spriteId: 541c8ff0f7ef9a2419fbd4166d217692
+    - name: Bounty-Hunter-Finish_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 21
+        y: 1
+        width: 15
+        height: 38
+      spriteId: af93c1754c8d68246833e7d5560dea3a
+    - name: Bounty-Hunter-Finish_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 21
+        y: 1
+        width: 15
+        height: 38
+      spriteId: 9ed1951c5d7910b4cb8424016020e504
+    - name: Bounty-Hunter-Finish_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 21
+        y: 1
+        width: 15
+        height: 38
+      spriteId: 2cb2ce09a57542445a32c2dfc461dd4b
+    - name: Bounty-Hunter-Finish_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 21
+        y: 1
+        width: 15
+        height: 38
+      spriteId: 95f668870d9e8ef4a8b773c539915b95
+    - name: Bounty-Hunter-Finish_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 14
+        y: 2
+        width: 20
+        height: 37
+      spriteId: 3561de0cecfbe2741b5615391762b1f9
+    - name: Bounty-Hunter-Finish_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 14
+        y: 1
+        width: 33
+        height: 27
+      spriteId: 5f8238ab91c96824fbfc973d4c016a6e
+    - name: Bounty-Hunter-Finish_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 14
+        y: 1
+        width: 33
+        height: 27
+      spriteId: 5b99700462957094d928ba127673ef60
+    - name: Bounty-Hunter-Finish_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 14
+        y: 1
+        width: 33
+        height: 27
+      spriteId: dc8c330f5cb3ddf4187643eddfdd7b49
+    - name: Bounty-Hunter-Finish_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 12
+        y: 4
+        width: 47
+        height: 22
+      spriteId: 0a1aefbc9cf2e14469aac44c8f0e4800
+    - name: Bounty-Hunter-Finish_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 13
+        y: 1
+        width: 28
+        height: 18
+      spriteId: 8d841288cde79e84298f7446a39ae973
+    - name: Bounty-Hunter-Finish_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 17
+        y: 1
+        width: 21
+        height: 21
+      spriteId: 08432e4006d970040af15c5cbbc70693
+    - name: Bounty-Hunter-Finish_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 20
+        y: 1
+        width: 22
+        height: 20
+      spriteId: 36cb3dda32976c745a1d4a81ef2ebfe5
+    - name: Bounty-Hunter-Finish_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 17
+        y: 1
+        width: 22
+        height: 20
+      spriteId: 1ed213ad42ac38348bd0223eb09010c9
+    - name: Bounty-Hunter-Finish_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 18
+        y: 6
+        width: 22
+        height: 34
+      spriteId: 741d83e2bd4bcc04da980c37ff7b55e9
+    - name: Bounty-Hunter-Finish_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 18
+        y: 3
+        width: 22
+        height: 35
+      spriteId: 3488f82d14ce68940b6e985f1202f762
+    - name: Bounty-Hunter-Finish_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 17
+        y: 2
+        width: 22
+        height: 38
+      spriteId: 2d7408f1479584246aa9b046cd69c8c0
+    - name: Bounty-Hunter-Finish_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 17
+        y: 7
+        width: 22
+        height: 35
+      spriteId: f39a8843840749941a9c48fb1c324c71
+    - name: Bounty-Hunter-Finish_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 18
+        y: 6
+        width: 22
+        height: 34
+      spriteId: 0c96c22c3c198494fbf3d7ceafb93e67
+    - name: Bounty-Hunter-Finish_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 18
+        y: 3
+        width: 22
+        height: 35
+      spriteId: 25a83b8371396204388588eb8f888ce9
+    - name: Bounty-Hunter-Finish_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 18
+        y: 2
+        width: 23
+        height: 38
+      spriteId: 129c8478ec5e0e646b2c916d90832f1b
+    - name: Bounty-Hunter-Finish_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 18
+        y: 7
+        width: 23
+        height: 35
+      spriteId: ebba700b95fc74640ae19411f1a15730
+    - name: Bounty-Hunter-Finish_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 13
+        y: 1
+        width: 27
+        height: 38
+      spriteId: 7d9c135cfafe5ca40b1b2c2d32b33275
+    - name: Bounty-Hunter-Finish_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 14
+        y: 1
+        width: 26
+        height: 37
+      spriteId: db7563c7b6a7f844c9311fa1751d6102
+    - name: Bounty-Hunter-Finish_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 15
+        y: 1
+        width: 26
+        height: 35
+      spriteId: 83e2b8838802a59418b83f4e6e0cb7b8
+    - name: Bounty-Hunter-Finish_Frame_122
+      frameIndex: 122
+      cellRect:
+        x: 16
+        y: 1
+        width: 56
+        height: 52
+      spriteId: 570999836fa0a5a4e981bb70c7f4098f
+    - name: Bounty-Hunter-Finish_Frame_123
+      frameIndex: 123
+      cellRect:
+        x: 10
+        y: 1
+        width: 47
+        height: 51
+      spriteId: b62d405a82bfc234c863a3f129502452
+    - name: Bounty-Hunter-Finish_Frame_124
+      frameIndex: 124
+      cellRect:
+        x: 6
+        y: 1
+        width: 38
+        height: 31
+      spriteId: a75b2fb552534a84098792b9d5261e7b
+    - name: Bounty-Hunter-Finish_Frame_125
+      frameIndex: 125
+      cellRect:
+        x: 10
+        y: 1
+        width: 34
+        height: 30
+      spriteId: 9fabe238911adf54e9ac5107882a0599
+    - name: Bounty-Hunter-Finish_Frame_126
+      frameIndex: 126
+      cellRect:
+        x: 9
+        y: 1
+        width: 35
+        height: 30
+      spriteId: 42ab0823d0bc307499318e9379009fc9
+    - name: Bounty-Hunter-Finish_Frame_127
+      frameIndex: 127
+      cellRect:
+        x: 20
+        y: 1
+        width: 35
+        height: 40
+      spriteId: 78fe091eebbd9b742947065eb45f48a4
+    - name: Bounty-Hunter-Finish_Frame_128
+      frameIndex: 128
+      cellRect:
+        x: 4
+        y: 6
+        width: 51
+        height: 45
+      spriteId: 96f2ec156b5f3374b8fe14434456e349
+    - name: Bounty-Hunter-Finish_Frame_129
+      frameIndex: 129
+      cellRect:
+        x: 7
+        y: 6
+        width: 36
+        height: 36
+      spriteId: 895286d92eced88408cfefcd2d203a0b
+    - name: Bounty-Hunter-Finish_Frame_130
+      frameIndex: 130
+      cellRect:
+        x: 6
+        y: 3
+        width: 37
+        height: 35
+      spriteId: 43dcf6962ba6a8c408969c52f109ceea
+    - name: Bounty-Hunter-Finish_Frame_131
+      frameIndex: 131
+      cellRect:
+        x: 14
+        y: 1
+        width: 27
+        height: 36
+      spriteId: bc4dd419b337d004993facc6d147498c
+    - name: Bounty-Hunter-Finish_Frame_132
+      frameIndex: 132
+      cellRect:
+        x: 15
+        y: 1
+        width: 26
+        height: 34
+      spriteId: c95bb7e33791e054fb7fb4e7c5c0987c
+    - name: Bounty-Hunter-Finish_Frame_135
+      frameIndex: 135
+      cellRect:
+        x: 3
+        y: 2
+        width: 41
+        height: 24
+      spriteId: 7debb08d67fbc0741a735b0af41204d2
+    - name: Bounty-Hunter-Finish_Frame_136
+      frameIndex: 136
+      cellRect:
+        x: 8
+        y: 2
+        width: 36
+        height: 24
+      spriteId: 719bb2c094ddfa140a9b93a119299827
+    - name: Bounty-Hunter-Finish_Frame_138
+      frameIndex: 138
+      cellRect:
+        x: 13
+        y: 1
+        width: 27
+        height: 26
+      spriteId: 0a61ecff7058bbe4b980fdee31252a14
+    - name: Bounty-Hunter-Finish_Frame_139
+      frameIndex: 139
+      cellRect:
+        x: 1
+        y: 1
+        width: 41
+        height: 31
+      spriteId: 98aec28d3679d0d4790ba36b9678ad8d
+    - name: Bounty-Hunter-Finish_Frame_140
+      frameIndex: 140
+      cellRect:
+        x: 4
+        y: 1
+        width: 38
+        height: 30
+      spriteId: ae6e9bd91bb029a46b46dc6a436e2f7e
+    - name: Bounty-Hunter-Finish_Frame_141
+      frameIndex: 141
+      cellRect:
+        x: 4
+        y: 1
+        width: 38
+        height: 30
+      spriteId: 9e6d2441b7510174888a23cb3bbe9c5d
+    - name: Bounty-Hunter-Finish_Frame_142
+      frameIndex: 142
+      cellRect:
+        x: 15
+        y: 1
+        width: 26
+        height: 35
+      spriteId: 268ae0d8321354e40a8784c02c400a3a
+    - name: Bounty-Hunter-Finish_Frame_143
+      frameIndex: 143
+      cellRect:
+        x: 3
+        y: 6
+        width: 33
+        height: 37
+      spriteId: 500527c651c4d8f408ba315fac85c393
+    - name: Bounty-Hunter-Finish_Frame_144
+      frameIndex: 144
+      cellRect:
+        x: 5
+        y: 3
+        width: 65
+        height: 37
+      spriteId: 35d5b102ca263464ca992c4cd7d746fb
+    - name: Bounty-Hunter-Finish_Frame_145
+      frameIndex: 145
+      cellRect:
+        x: 10
+        y: 3
+        width: 58
+        height: 37
+      spriteId: 2af6940c6c4e46c41a7b9b83bd56a1f6
+    - name: Bounty-Hunter-Finish_Frame_146
+      frameIndex: 146
+      cellRect:
+        x: 6
+        y: 4
+        width: 33
+        height: 34
+      spriteId: ead99d3ac5b82954fb59d1dc5e25c9e3
+    - name: Bounty-Hunter-Finish_Frame_147
+      frameIndex: 147
+      cellRect:
+        x: 6
+        y: 3
+        width: 37
+        height: 34
+      spriteId: d7c9c47f9b8463a4eb6d1d11265ebfd3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 73, y: 54}

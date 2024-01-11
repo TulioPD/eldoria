@@ -1,0 +1,3361 @@
+fileFormatVersion: 2
+guid: f63e8ecd765205c4885e4faafc7de6f0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BH-ShotGun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084782547c5f2794fbcb6d11c281fda6
+      internalID: 1464520568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385fa77680babc146813d6535bec4fa5
+      internalID: -1900627948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a690b5a94e44d4c9a7b272006d648d
+      internalID: 1040192376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d0a565d76b67843ad6579c3981e552
+      internalID: -2119682533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a383272ba4d7954b853042a61b7ad0c
+      internalID: -1429876073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64f8c68093d6ed4daff2033ea1aba1c
+      internalID: 1050368169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d163c82fce7a6d468deaf437023db16
+      internalID: 654320513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1566
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4df834d8b011f4a82b1d0101f97303
+      internalID: 658835488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f1ede1d39bf1b4e8607de6ac17d716
+      internalID: 1991288426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96afb3d30afd46d43a30b55c2043a8a5
+      internalID: -1843571544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_10
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4715e8515a6ccc2429cf391d718e1632
+      internalID: 1167429956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585392858dc0ece418452831e16c6aec
+      internalID: -2074428950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_12
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafd3921a8f4f4c45ba3dbf7780404ac
+      internalID: 302438046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_13
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fccf2534257bd4fbcda80c8003d57b
+      internalID: -133816918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_14
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b970b08da5f5fa4a8f58c23e970e066
+      internalID: -1501300444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_15
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1512
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38039f73050de0a4f8e891188517896c
+      internalID: -2033161620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3f7fc6700182047b0520bf16470c1a
+      internalID: -1349810874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b7959e1bb9ec84ab29355eafe40f6f
+      internalID: -52711892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_18
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c8c8efae0d61447b78f31244977461
+      internalID: 2136498004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_19
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c2fcd020b49a945b5808bd16d6ea29
+      internalID: 571453884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_20
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7abae017dc667c49bb92c065be4f1f9
+      internalID: 2019706381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_21
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dd660bf33c75645aec63af4bcd839a
+      internalID: -1118893768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_22
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cc59818e526cf4693bbee52e7fd713
+      internalID: -2113503148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_23
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1458
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afbab466a8cd744eb461447464f2805
+      internalID: 1253107200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e2212ede328fd4e9bb8c61437ba841
+      internalID: -226314664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3732206fa6ae94b847cfadb16a82fa
+      internalID: 1167734341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_26
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6974917df0473ad4da90c9b9fbf83158
+      internalID: 765667343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_27
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f0bee7b6588f349bd8bd751fcfa284
+      internalID: -689914055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f288205e76a20d84b826bc6d9e7f0c38
+      internalID: 695556698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_29
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4165df8f5742124da1b6165f5e92281
+      internalID: 1473905819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_30
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9ba38adcf63e04fad5bf0a4af43fe3
+      internalID: -179655613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_31
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1404
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d008b8dbf33985840bf079a7976695ae
+      internalID: -862637649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cf7f48971f5bc4f989ddeaf017d162
+      internalID: -1924115770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1350
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2cfe3cab9ff5f438e45f30e898075e
+      internalID: -1391012494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_34
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1350
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d091334e9dbf5de47a0fdb52bec3d7e4
+      internalID: 876416192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_35
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1350
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408597a1b938aa4469d7745f3468a796
+      internalID: 9669298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac43a4c09088894c82d35f0630f8b35
+      internalID: 1429438074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_37
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1296
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd2d6b34ab44e8438ac4c003e1b66fd
+      internalID: 893881446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1296
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4c0d2d2780cba46837bc224d8f45b1
+      internalID: 80269615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1242
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8142c389ad414104a8a2a918f2c3633a
+      internalID: -2017828577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_40
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1242
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69005d729c23402429d4bb3a5d74f03b
+      internalID: 1728858992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_41
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1242
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdcd42f3cd825a428497ecd35c436be
+      internalID: -2115720142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1188
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b7e3583daee4642b4621dbae13a424
+      internalID: -1750176444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_43
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1188
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b611fd88ad77f0a438ff582bdb773035
+      internalID: -774219849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_44
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1188
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974e9460293d3a147a1bbbe5fe75de96
+      internalID: 785631763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1134
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9a2f8601c0c1645b75d0fd05a98ab4
+      internalID: -1021473571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_46
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1134
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bb560da45a91642bb361b6509494de
+      internalID: -1320128397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_47
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1134
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf07f54e83063340b0d03bf5f1be17f
+      internalID: 1107843340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf6ab53920fedd469713881dc6b48bf
+      internalID: 468463973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_49
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2325858e70844344b56ceae8beacbee
+      internalID: -1816989778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_50
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3788c4523e7c242a61bf8da88f7c69
+      internalID: 1885826989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_51
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be2986f534c81a4a9df7953c91c7de7
+      internalID: -1224966468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_52
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd57116aecd84947a0e4fcdd4482634
+      internalID: 1510969679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_53
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3415b510ce0efd04f864429fdb676880
+      internalID: -9061571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_54
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1080
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fabc9543b35b641a0e15dcbea84bac
+      internalID: 562145483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5723ffd3127534c4ca485ad96ac2204c
+      internalID: 2087210794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_56
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1026
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129b63ccc3f46af44b60b58478c870ba
+      internalID: -168256302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_57
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1026
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411d3304c555ebc49988106bef4dce2e
+      internalID: 1965062419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c7c68ec3c9890468a43787d4397f4a
+      internalID: -985600214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_59
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 972
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43061589ff46e3c4cacf381e70c12885
+      internalID: 524141200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_60
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 972
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3eed0fd9af8504c99ff04fc57dc6ee
+      internalID: -490044827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a706ae7fbcd9274c879994e0e0fde91
+      internalID: -1577637879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_62
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 918
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e0e98b16866a5408f3c7e3a3c9c9c1
+      internalID: -1509236743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_63
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 918
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196afa209237635478268ac52d725ac1
+      internalID: -599344427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bc2129b34eb664292b08aeae3e32b4
+      internalID: -1507365812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_65
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 864
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaecfc65c8544b408328ba49057b0a4
+      internalID: 275773890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_66
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 864
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4ae6f88c090a24ea1875f304b6b16c
+      internalID: -1091871155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a381330daca5d74ca55118438bd253e
+      internalID: -8650686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_68
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 810
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7555d55a82f6a148b3efe82d63d4bfc
+      internalID: 1196854797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_69
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 810
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569cde7f1de441b409736072060acbf6
+      internalID: 610704576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a912bd7178dd04182cf0e440b0ab17
+      internalID: 881304879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_71
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 756
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4614baedbf3c4514ba38e4501139fe7c
+      internalID: 705123705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_72
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 756
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104f758ebffa3cf4fb2924e2b6b7503a
+      internalID: 1103150502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 702
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631b2408d791a86489149ad8dea0abe7
+      internalID: 1892011934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_74
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 702
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388f8472dc5f63d43aca4939f036059c
+      internalID: 1350818754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_75
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 702
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c158f1e21c54b3459379d08ccc720fa
+      internalID: -714077825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_76
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 702
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ac69a14a77b6644b9fae888b522529
+      internalID: 1747737651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_77
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 702
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0c22887a5c32d4fb07bd207a152e60
+      internalID: -356310477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040938f8b68eb3146adfb5c6453e9147
+      internalID: -741139807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_79
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 648
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b11bb432e4d7e4ba8cb684d2a172d9
+      internalID: -158545827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_80
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 648
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1d0c22928736143ab02fe603453f61
+      internalID: 1387483085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_81
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 648
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6558cbb3a0909240a131c72bc426680
+      internalID: -1640221674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_82
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 648
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fd49473128ada4f9090559633d8f47
+      internalID: 1624715582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f2797ba76e806439dd51750a5fb556
+      internalID: -1599741882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_84
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2625390b65f5f8e49a7fd48ca0a0777a
+      internalID: 1488146843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_85
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113e7df0a46559a4583be4fdbe64925e
+      internalID: -2051799363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_86
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8953b84953d114a8aa74efd66a4485
+      internalID: 1176862081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_87
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c583cd70acb394380321f298994a46
+      internalID: 1165280837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_88
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f004cefda11905747b5a9c0c67ad8522
+      internalID: -1261799556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_89
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 594
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbf8e18541d0914b8019033afeb080a
+      internalID: 559231796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28017651c220ee24e8df298b17a176df
+      internalID: 1634590337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_91
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 540
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa6bf396e5d67d45851c692f0a7ba3b
+      internalID: 351024985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_92
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 540
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23de02db3c2b8843b742d62c1b61521
+      internalID: -417804434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458a00fc20906b449a7e57e9e4b02d53
+      internalID: 203270965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_94
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 486
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323042d50ec0cc5449d78d60893ab56d
+      internalID: 439223739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_95
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 486
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be206e1e433e38c4aa72b4ad68ae3e8c
+      internalID: 533718839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_96
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 486
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efcfb368f0cfba4f86d380ab4078385
+      internalID: 1302662456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c3ec0f0a59cfb469bd823fd730d5ac
+      internalID: 1976647517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_98
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 432
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bc057e304ce6043b06e8fc5e1e3e9f
+      internalID: 1898195094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_99
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 432
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c370d8cb34b1a64ab09b28a77b08711
+      internalID: 922416643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef148323440c144dbb953abcc0e28c1
+      internalID: -1131735046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_101
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 378
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0bf5dc45a44aa4aaf061bcabaf2ad2
+      internalID: 1517140357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_102
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 378
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bc44070c68a9e459b2de8fef156691
+      internalID: -381227656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_103
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 378
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a949c21f1857e40b1e56dad8cf72d9
+      internalID: 834405468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4572609035b115499dc094b0231fc24
+      internalID: 1343152769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_105
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d31ae06a0e69044aa21e4db17cf39e1
+      internalID: 53884135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_106
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02491a8c513743240a8f53b6f3fc23ff
+      internalID: -1615745182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_107
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ab66898b7b9104d9fedab4f9f5f7ab
+      internalID: 1009175233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_108
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc1df554f29c96439223565894fe845
+      internalID: 1097521392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_109
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ca69a56dd3a4743af10c2ccbec2205
+      internalID: 564265652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_110
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 324
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c69174617925e346bd3d20fa9e03244
+      internalID: -910955436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666fbbadfa86cd64fb26bd77352cde2e
+      internalID: -312522663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_112
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a67f1cd8e2ef394f8d89f5668350e88
+      internalID: -894827867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_113
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b57eb9b56dc593448a53f1b3647c9a7
+      internalID: -1138833092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_114
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c8cf3206625ae41ba22a7e45c0ff47
+      internalID: 1080961506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_115
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175f38c42864f304499c0c170ae7365d
+      internalID: -160601253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_116
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21ad07d2df1e86489dc309121c805c3
+      internalID: -827892582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_117
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a050f74d03c865b47a8fc31ccfc4f941
+      internalID: 1534961845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_118
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 270
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf309b4b1f362a4bae036eddb2e4112
+      internalID: -475006270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfd21cb352ff174aa81c0a43a68bdc0
+      internalID: 278324551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_120
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0f881400440d849828c3748a2b61a6
+      internalID: 2029967818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_121
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb156faca98d2824c89225ff13fe4ae1
+      internalID: 761247921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_122
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9caf0fb09df0d45a0e4986c460fb20
+      internalID: -1078026031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_123
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39466fd9721c86b46aa9407abbc40c61
+      internalID: -1018337019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_124
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b9b1ccf379dd04d8d2425064165dec
+      internalID: 2043295410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_125
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40df33e1a8ca41e4aabbdddd5597acd8
+      internalID: -1418208823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_126
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 216
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f5092efd96b07419cc5f134e4845c4
+      internalID: 1048383186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5d4d5ec8fe21a4e8ed85bf8a00b9b4
+      internalID: -312854293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_128
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 162
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e3d196393b2134eab03ef81aae5297
+      internalID: 1612281020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_129
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 162
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d587e58575170bf4398a5de542b4d174
+      internalID: 1321740773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_130
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 162
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a447db383ecde2641bba489e5420f989
+      internalID: 23459241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_131
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 162
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228e42d1852e1d547a55a6abc8dc61f7
+      internalID: -456909259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_132
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 162
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf801d066ea30d429954a56af595201
+      internalID: -1270947483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274b1eb52f3d0304cbcb3ffc3a45afaf
+      internalID: -2021846857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_134
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6965e8099d44949b3fc09bde4b788d
+      internalID: -42022944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_135
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d2d468c61f24e46b4a640b8922a82e
+      internalID: -1969692374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_136
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0f678b9e307454c866ef1287f103bf
+      internalID: 1686827440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_137
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9f256310e0a984ea4db0873f262c82
+      internalID: -924439156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_138
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efcc4902e48bfe4dadaa0d1cdfa297f
+      internalID: -1660682294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_139
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f84dd59d0f032244ae239d2d1b08ba0
+      internalID: -146031840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_140
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 108
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af461c9c353214245b0fd2fccefd6f28
+      internalID: -1985878124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_141
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e67cf10448a348448fdc9bb26af6570
+      internalID: -94973463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4128b3f2c56d9a44b99362d01713286d
+      internalID: 1351940982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_143
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc24712150ee7f4aa7e6fbe636fa9c2
+      internalID: 128452898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_144
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d20c5544d8b6d4fbd1ae436d020d6c
+      internalID: -1408007025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_145
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6574ed31fe21da04d8ad33660ee31db3
+      internalID: -1118257968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BH-ShotGun_146
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c125aa45fb72be447920e21686818d4e
+      internalID: -152537272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BH-ShotGun_0: 1464520568
+      BH-ShotGun_1: -1900627948
+      BH-ShotGun_10: 1167429956
+      BH-ShotGun_100: -1131735046
+      BH-ShotGun_101: 1517140357
+      BH-ShotGun_102: -381227656
+      BH-ShotGun_103: 834405468
+      BH-ShotGun_104: 1343152769
+      BH-ShotGun_105: 53884135
+      BH-ShotGun_106: -1615745182
+      BH-ShotGun_107: 1009175233
+      BH-ShotGun_108: 1097521392
+      BH-ShotGun_109: 564265652
+      BH-ShotGun_11: -2074428950
+      BH-ShotGun_110: -910955436
+      BH-ShotGun_111: -312522663
+      BH-ShotGun_112: -894827867
+      BH-ShotGun_113: -1138833092
+      BH-ShotGun_114: 1080961506
+      BH-ShotGun_115: -160601253
+      BH-ShotGun_116: -827892582
+      BH-ShotGun_117: 1534961845
+      BH-ShotGun_118: -475006270
+      BH-ShotGun_119: 278324551
+      BH-ShotGun_12: 302438046
+      BH-ShotGun_120: 2029967818
+      BH-ShotGun_121: 761247921
+      BH-ShotGun_122: -1078026031
+      BH-ShotGun_123: -1018337019
+      BH-ShotGun_124: 2043295410
+      BH-ShotGun_125: -1418208823
+      BH-ShotGun_126: 1048383186
+      BH-ShotGun_127: -312854293
+      BH-ShotGun_128: 1612281020
+      BH-ShotGun_129: 1321740773
+      BH-ShotGun_13: -133816918
+      BH-ShotGun_130: 23459241
+      BH-ShotGun_131: -456909259
+      BH-ShotGun_132: -1270947483
+      BH-ShotGun_133: -2021846857
+      BH-ShotGun_134: -42022944
+      BH-ShotGun_135: -1969692374
+      BH-ShotGun_136: 1686827440
+      BH-ShotGun_137: -924439156
+      BH-ShotGun_138: -1660682294
+      BH-ShotGun_139: -146031840
+      BH-ShotGun_14: -1501300444
+      BH-ShotGun_140: -1985878124
+      BH-ShotGun_141: -94973463
+      BH-ShotGun_142: 1351940982
+      BH-ShotGun_143: 128452898
+      BH-ShotGun_144: -1408007025
+      BH-ShotGun_145: -1118257968
+      BH-ShotGun_146: -152537272
+      BH-ShotGun_15: -2033161620
+      BH-ShotGun_16: -1349810874
+      BH-ShotGun_17: -52711892
+      BH-ShotGun_18: 2136498004
+      BH-ShotGun_19: 571453884
+      BH-ShotGun_2: 1040192376
+      BH-ShotGun_20: 2019706381
+      BH-ShotGun_21: -1118893768
+      BH-ShotGun_22: -2113503148
+      BH-ShotGun_23: 1253107200
+      BH-ShotGun_24: -226314664
+      BH-ShotGun_25: 1167734341
+      BH-ShotGun_26: 765667343
+      BH-ShotGun_27: -689914055
+      BH-ShotGun_28: 695556698
+      BH-ShotGun_29: 1473905819
+      BH-ShotGun_3: -2119682533
+      BH-ShotGun_30: -179655613
+      BH-ShotGun_31: -862637649
+      BH-ShotGun_32: -1924115770
+      BH-ShotGun_33: -1391012494
+      BH-ShotGun_34: 876416192
+      BH-ShotGun_35: 9669298
+      BH-ShotGun_36: 1429438074
+      BH-ShotGun_37: 893881446
+      BH-ShotGun_38: 80269615
+      BH-ShotGun_39: -2017828577
+      BH-ShotGun_4: -1429876073
+      BH-ShotGun_40: 1728858992
+      BH-ShotGun_41: -2115720142
+      BH-ShotGun_42: -1750176444
+      BH-ShotGun_43: -774219849
+      BH-ShotGun_44: 785631763
+      BH-ShotGun_45: -1021473571
+      BH-ShotGun_46: -1320128397
+      BH-ShotGun_47: 1107843340
+      BH-ShotGun_48: 468463973
+      BH-ShotGun_49: -1816989778
+      BH-ShotGun_5: 1050368169
+      BH-ShotGun_50: 1885826989
+      BH-ShotGun_51: -1224966468
+      BH-ShotGun_52: 1510969679
+      BH-ShotGun_53: -9061571
+      BH-ShotGun_54: 562145483
+      BH-ShotGun_55: 2087210794
+      BH-ShotGun_56: -168256302
+      BH-ShotGun_57: 1965062419
+      BH-ShotGun_58: -985600214
+      BH-ShotGun_59: 524141200
+      BH-ShotGun_6: 654320513
+      BH-ShotGun_60: -490044827
+      BH-ShotGun_61: -1577637879
+      BH-ShotGun_62: -1509236743
+      BH-ShotGun_63: -599344427
+      BH-ShotGun_64: -1507365812
+      BH-ShotGun_65: 275773890
+      BH-ShotGun_66: -1091871155
+      BH-ShotGun_67: -8650686
+      BH-ShotGun_68: 1196854797
+      BH-ShotGun_69: 610704576
+      BH-ShotGun_7: 658835488
+      BH-ShotGun_70: 881304879
+      BH-ShotGun_71: 705123705
+      BH-ShotGun_72: 1103150502
+      BH-ShotGun_73: 1892011934
+      BH-ShotGun_74: 1350818754
+      BH-ShotGun_75: -714077825
+      BH-ShotGun_76: 1747737651
+      BH-ShotGun_77: -356310477
+      BH-ShotGun_78: -741139807
+      BH-ShotGun_79: -158545827
+      BH-ShotGun_8: 1991288426
+      BH-ShotGun_80: 1387483085
+      BH-ShotGun_81: -1640221674
+      BH-ShotGun_82: 1624715582
+      BH-ShotGun_83: -1599741882
+      BH-ShotGun_84: 1488146843
+      BH-ShotGun_85: -2051799363
+      BH-ShotGun_86: 1176862081
+      BH-ShotGun_87: 1165280837
+      BH-ShotGun_88: -1261799556
+      BH-ShotGun_89: 559231796
+      BH-ShotGun_9: -1843571544
+      BH-ShotGun_90: 1634590337
+      BH-ShotGun_91: 351024985
+      BH-ShotGun_92: -417804434
+      BH-ShotGun_93: 203270965
+      BH-ShotGun_94: 439223739
+      BH-ShotGun_95: 533718839
+      BH-ShotGun_96: 1302662456
+      BH-ShotGun_97: 1976647517
+      BH-ShotGun_98: 1898195094
+      BH-ShotGun_99: 922416643
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
