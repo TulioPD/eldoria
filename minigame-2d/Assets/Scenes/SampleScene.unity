@@ -2755,7 +2755,7 @@ Transform:
   m_GameObject: {fileID: 2033313755}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2947,6 +2947,7 @@ MonoBehaviour:
   resistance: 0
   damageTaken: 0
   playerData: {fileID: 11400000, guid: 8701c386efb203346b67ec07459859f6, type: 2}
+  groundCheck: {fileID: 2033313756}
 --- !u!212 &2109092873
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -2,17 +2,56 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerLandState : MonoBehaviour
+public class PlayerLandState : PlayerGroundState
 {
-    // Start is called before the first frame update
-    void Start()
+    public PlayerLandState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void AnimationTrigger()
     {
-        
+        base.AnimationTrigger();
+    }
+
+    public override void DoChecks()
+    {
+        base.DoChecks();
+    }
+
+    public override void Enter()
+    {
+        //Quizás moverlo a LogicUpdate
+        base.Enter();
+        if (player.InputHandler.NormalizedInputX!=0)
+        {
+            //player.CheckIfShouldFlip(player.InputHandler.NormalizedInputX);
+            stateMachine.ChangeState(player.MoveState);
+        }
+        else
+        {
+            stateMachine.ChangeState(player.IdleState);
+        }
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+    }
+
+    public override void FrameUpdate()
+    {
+        base.FrameUpdate();
+    }
+
+    public override void LogicUpdate()
+    {
+        base.LogicUpdate();
+    }
+
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
     }
 }
+
+    

@@ -11,18 +11,26 @@ public class Player : Creature
     public PlayerGroundState GroundState { get; private set; }
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
+    public PlayerJumpState JumpState { get; private set; }
+    public PlayerAirState AirState { get; private set; }
+    public PlayerLandState LandState { get; private set; }
+    //public PlayerWallSlideState WallSlideState { get; private set; }
     [SerializeField]
     private PlayerData playerData;
     #endregion
     #region Components
     public Animator Animator { get; private set; }
-    public InputHandler PlayerMovement { get; private set; }
+    public InputHandler InputHandler { get; private set; }
     #endregion
     #region Other Variables
     private Vector2 workspace;
     public Rigidbody2D RB { get; private set; }
     public Vector2 CurrentVelocity { get; private set; }
     public int FacingDirection { get; private set; }
+    #endregion
+    #region Check Variables
+    [SerializeField]
+    private Transform groundCheck;
     #endregion
 
     #region Unity Callback Functions
@@ -32,6 +40,10 @@ public class Player : Creature
         StateMachine = new PlayerStateMachine();
         IdleState= new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
+        JumpState = new PlayerJumpState(this, StateMachine, playerData, "air");
+        AirState = new PlayerAirState(this, StateMachine, playerData, "air");
+        LandState = new PlayerLandState(this, StateMachine, playerData, "land");
+        //WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
     }
     
     protected override void Start()
@@ -39,7 +51,7 @@ public class Player : Creature
         base.Start();
         FacingDirection = 1;
         RB= GetComponent<Rigidbody2D>();
-        PlayerMovement = GetComponent<InputHandler>();
+        InputHandler = GetComponent<InputHandler>();
         Animator = GetComponent<Animator>();
         StateMachine.Initialize(IdleState);
         // Additional start logic if needed
@@ -65,6 +77,13 @@ public class Player : Creature
         RB.velocity = workspace;
         CurrentVelocity = workspace;
     }
+
+    public void SetVelocityY(float velocity)
+    {
+        workspace.Set(CurrentVelocity.x, velocity);
+        RB.velocity = workspace;
+        CurrentVelocity = workspace;
+    }
     #endregion
     
     #region Check Functions
@@ -74,6 +93,11 @@ public class Player : Creature
         {
             Flip();
         }
+    }
+
+    public bool CheckIfGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, playerData.whatIsGround);
     }
     #endregion
     private void Flip()
