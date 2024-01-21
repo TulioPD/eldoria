@@ -5,7 +5,7 @@ public class SmoothFollowCamera : MonoBehaviour
     public Transform target;
     public float smoothSpeed = 0.1f;
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         if (target == null)
         {
