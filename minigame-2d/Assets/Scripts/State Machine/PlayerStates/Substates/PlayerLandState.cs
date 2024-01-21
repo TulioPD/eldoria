@@ -20,17 +20,17 @@ public class PlayerLandState : PlayerGroundState
 
     public override void Enter()
     {
-        //Quizás moverlo a LogicUpdate
+        //Comentado para testear Enter vs LogicUpdate. Debería de hacer lo mismo en ambos estados. Volver a descomentar si en el futuro se producen errores con interacciones de animaciones al comprobarse más de una vez por frame
         base.Enter();
-        if (player.InputHandler.NormalizedInputX!=0)
-        {
-            //player.CheckIfShouldFlip(player.InputHandler.NormalizedInputX);
-            stateMachine.ChangeState(player.MoveState);
-        }
-        else
-        {
-            stateMachine.ChangeState(player.IdleState);
-        }
+        //if (player.InputHandler.NormalizedInputX!=0)
+        //{
+        //    //player.CheckIfShouldFlip(player.InputHandler.NormalizedInputX);
+        //    stateMachine.ChangeState(player.MoveState);
+        //}
+        //else
+        //{
+        //    stateMachine.ChangeState(player.IdleState);
+        //}
     }
 
     public override void Exit()
@@ -46,6 +46,16 @@ public class PlayerLandState : PlayerGroundState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        if (player.InputHandler.NormalizedInputX != 0)
+        {
+            //player.CheckIfShouldFlip(player.InputHandler.NormalizedInputX);
+            stateMachine.ChangeState(player.MoveState);
+        }
+        else //TODO: comprobar si la animación ha terminado y generar polvo. Cambiar a else if. Será necesario llamar a la función desde el final de la animación desde el editor de Unity. No necesario en el estado actual para que funcione
+        {
+            //Debug.Log("Animation Finished - Land player");
+            stateMachine.ChangeState(player.IdleState);
+        }
     }
 
     public override void PhysicsUpdate()

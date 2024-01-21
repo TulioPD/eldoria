@@ -6,6 +6,10 @@ public class PlayerAirState : PlayerState
 {
     private bool isGrounded;
     private int xInput;
+    private bool jumpInput;
+    private bool jumpInputStop;
+    private bool coyoteTime;
+    private bool isJumping;
     public PlayerAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -34,10 +38,20 @@ public class PlayerAirState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        CheckCoyoteTime();
         xInput=player.InputHandler.NormalizedInputX;
+        jumpInput=player.InputHandler.JumpInput;
+        jumpInputStop=player.InputHandler.JumpInputStop;
+        CheckJumpMultiplier();
+        
         if (isGrounded&&player.CurrentVelocity.y<.01f)
         {
             stateMachine.ChangeState(player.LandState);
+        }
+        else if (jumpInput && player.JumpState.CanJump())
+        {
+            //player.InputHandler.UseJumpInput();
+            stateMachine.ChangeState(player.JumpState);
         }
         else
         {
@@ -50,6 +64,31 @@ public class PlayerAirState : PlayerState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+    }
+    private void CheckCoyoteTime()
+    {
+        if(coyoteTime&& Time.time > startTime + playerData.coyoteTime)
+        {
+            coyoteTime=false;
+            player.JumpState.DecreaseAmountOfJumpsLeft();
+        }
+    }
+    public void StartCoyoteTime() => coyoteTime=true;
+    public void SetIsJumping() => isJumping=true;
+    private void CheckJumpMultiplier()
+    {
+        if (isJumping)
+        {
+            if (jumpInputStop)
+            {
+                player.SetVelocityY(player.CurrentVelocity.y * playerData.variableJumpHeightMultiplier);
+                isJumping = false;
+            }
+            else if (player.CurrentVelocity.y <= 0f)
+            {
+                isJumping = false;
+            }
+        }
     }
 }
 

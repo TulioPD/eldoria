@@ -100,11 +100,15 @@ public class Player : Creature
         return Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, playerData.whatIsGround);
     }
     #endregion
+    #region Other Functions
     private void Flip()
     {
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
     }
+    private void AnimationTrigger()=> StateMachine.State.AnimationTrigger();
+    private void AnimationFinishTrigger()=> StateMachine.State.AnimationFinishTrigger();
+    #endregion
     public enum PlayerInputs
     {
         Jump,
