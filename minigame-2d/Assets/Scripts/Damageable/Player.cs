@@ -8,13 +8,16 @@ public class Player : Creature
 
     #region State Variables
     public PlayerStateMachine StateMachine { get; private set; }
-    public PlayerGroundState GroundState { get; private set; }
+    //public PlayerGroundState GroundState { get; private set; }
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
     public PlayerJumpState JumpState { get; private set; }
     public PlayerAirState AirState { get; private set; }
     public PlayerLandState LandState { get; private set; }
-    //public PlayerWallSlideState WallSlideState { get; private set; }
+    public PlayerWallSlideState WallSlideState { get; private set; }
+    //public PlayerWallGrabState WallGrabState { get; private set; }
+    //public PlayerWallClimbState WallClimbState { get; private set; }
+    public PlayerLedgeClimbState LedgeClimbState { get; private set; }
     [SerializeField]
     private PlayerData playerData;
     #endregion
@@ -31,6 +34,10 @@ public class Player : Creature
     #region Check Variables
     [SerializeField]
     private Transform groundCheck;
+    [SerializeField]
+    private Transform wallCheck;
+    [SerializeField]
+    private Transform ledgeCheck;
     #endregion
 
     #region Unity Callback Functions
@@ -43,7 +50,10 @@ public class Player : Creature
         JumpState = new PlayerJumpState(this, StateMachine, playerData, "air");
         AirState = new PlayerAirState(this, StateMachine, playerData, "air");
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
-        //WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
+        WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
+        //WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData, "wallClimb");
+        //WallGrabState = new PlayerWallGrabState(this, StateMachine, playerData, "wallGrab");
+        LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, "ledgeClimbState");
     }
     
     protected override void Start()
@@ -98,6 +108,14 @@ public class Player : Creature
     public bool CheckIfGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, playerData.whatIsGround);
+    }
+    public bool CheckIfTouchingWall()
+    {
+        return Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
+    }
+    public bool CheckIfTouchingLedge()
+    {
+        return Physics2D.Raycast(ledgeCheck.position, Vector2.right * FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
     }
     #endregion
     #region Other Functions

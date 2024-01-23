@@ -11,6 +11,7 @@ public class PlayerState
     protected float startTime;
     protected bool isAnimationFinished;
 
+
     protected PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
     {
         this.player = player;

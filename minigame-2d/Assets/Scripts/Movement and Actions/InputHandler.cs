@@ -11,6 +11,7 @@ public class InputHandler : MonoBehaviour
     public int NormalizedInputY { get; private set;}
     public bool JumpInput { get; private set;}
     public bool JumpInputStop { get; private set;}
+    //public bool GrabInput { get; private set;}
 
     [SerializeField] private float inputHoldTime=.2f;
     private float jumpInputStartTime;
@@ -40,6 +41,18 @@ public class InputHandler : MonoBehaviour
             JumpInputStop = true;
         }
     }
+
+    //public void OnGrab(InputAction.CallbackContext context)
+    //{
+    //    if (context.started)
+    //    {
+    //        GrabInput = true;
+    //    }
+    //    if (context.canceled)
+    //    {
+    //        GrabInput = false;
+    //    }
+    //}
 
     public void UseJumpInput() => JumpInput = false;
     private void CheckJumpInputHoldTime()
