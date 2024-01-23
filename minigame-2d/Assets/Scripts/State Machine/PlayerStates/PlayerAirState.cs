@@ -41,6 +41,7 @@ public class PlayerAirState : PlayerState
     public override void Exit()
     {
         base.Exit();
+
     }
     public override void FrameUpdate()
     {
@@ -59,6 +60,10 @@ public class PlayerAirState : PlayerState
         if (isGrounded&&player.CurrentVelocity.y<.01f)
         {
             stateMachine.ChangeState(player.LandState);
+        }
+        else if (isTouchingWall && !isTouchingLedge)
+        {
+            stateMachine.ChangeState(player.LedgeClimbState);
         }
         else if (jumpInput && player.JumpState.CanJump())
         {

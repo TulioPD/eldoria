@@ -24,6 +24,7 @@ public class Player : Creature
     #region Components
     public Animator Animator { get; private set; }
     public InputHandler InputHandler { get; private set; }
+    public Inventory Inventory { get; private set; }
     #endregion
     #region Other Variables
     private Vector2 workspace;
@@ -62,9 +63,9 @@ public class Player : Creature
         FacingDirection = 1;
         RB= GetComponent<Rigidbody2D>();
         InputHandler = GetComponent<InputHandler>();
+        Inventory = GetComponent<Inventory>();
         Animator = GetComponent<Animator>();
         StateMachine.Initialize(IdleState);
-        // Additional start logic if needed
     }
 
     protected override void Update()
@@ -94,6 +95,11 @@ public class Player : Creature
         RB.velocity = workspace;
         CurrentVelocity = workspace;
     }
+    public void SetVelocityZero()
+    {
+        RB.velocity = Vector2.zero;
+        CurrentVelocity = Vector2.zero;
+    }
     #endregion
     
     #region Check Functions
@@ -108,14 +114,37 @@ public class Player : Creature
     public bool CheckIfGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, playerData.whatIsGround);
+
     }
     public bool CheckIfTouchingWall()
     {
         return Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
+
     }
     public bool CheckIfTouchingLedge()
     {
         return Physics2D.Raycast(ledgeCheck.position, Vector2.right * FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
+
+    }
+    #endregion
+    #region Debug Functions
+    private void OnDrawGizmos()
+    {
+        // Visualize ground check radius
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, playerData.groundCheckRadius);
+
+        // Visualize wall check
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * FacingDirection * playerData.wallCheckDistance);
+
+        // Visualize ledge check
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + Vector3.right * FacingDirection * playerData.wallCheckDistance);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
     }
     #endregion
     #region Other Functions
@@ -124,16 +153,19 @@ public class Player : Creature
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
     }
+    public Vector2 DetermineCornerPosition()
+    {
+        RaycastHit2D xHit = Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
+        float xDist = xHit.distance;
+        workspace.Set(xDist * FacingDirection, 0f);
+        RaycastHit2D yHit = Physics2D.Raycast(ledgeCheck.position + (Vector3)(workspace), Vector2.down, ledgeCheck.position.y - wallCheck.position.y, playerData.whatIsGround);
+        float yDist = yHit.distance;
+        workspace.Set(wallCheck.position.x + (xDist * FacingDirection), ledgeCheck.position.y - yDist);
+        return workspace;
+    }
+
+    public void AddGemsToInventory(int amount)=>Inventory.AddGems(amount);
     private void AnimationTrigger()=> StateMachine.State.AnimationTrigger();
     private void AnimationFinishTrigger()=> StateMachine.State.AnimationFinishTrigger();
     #endregion
-    public enum PlayerInputs
-    {
-        Jump,
-        Move,
-        Attack,
-        Dash,
-        Interact,
-        Pause
-    }
 }

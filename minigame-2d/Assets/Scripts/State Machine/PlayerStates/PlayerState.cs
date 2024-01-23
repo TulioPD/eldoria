@@ -26,7 +26,7 @@ public class PlayerState
         DoChecks();
         player.Animator.SetBool(animBoolName, true);
         startTime = Time.time;
-        Debug.Log(animBoolName);
+        //Debug.Log(animBoolName);
         isAnimationFinished = false;
     }
     public virtual void Exit()
@@ -39,7 +39,7 @@ public class PlayerState
     {
         DoChecks();
     }
-    public virtual void AnimationTrigger() { }
+    public virtual void AnimationTrigger() => isAnimationFinished = false;
     public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
     public virtual void DoChecks() { }
 
