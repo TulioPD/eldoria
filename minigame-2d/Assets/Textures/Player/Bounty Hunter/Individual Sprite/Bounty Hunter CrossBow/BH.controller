@@ -494,7 +494,7 @@ AnimatorStateMachine:
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: 3900282209907138511}
-    m_Position: {x: 660, y: 210, z: 0}
+    m_Position: {x: 650, y: 210, z: 0}
   m_AnyStateTransitions: []
   m_EntryTransitions:
   - {fileID: 376821847012397274}
@@ -519,7 +519,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jump/Fall Blend Tree
+  m_Name: BH-Crossbow_Jump/Fall Blend Tree
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -710,12 +710,6 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: idle
     m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: horizontal
-    m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0

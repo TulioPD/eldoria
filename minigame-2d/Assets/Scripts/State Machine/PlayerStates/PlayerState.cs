@@ -18,7 +18,6 @@ public class PlayerState
         this.stateMachine = stateMachine;
         this.playerData = playerData;
         this.animBoolName = animBoolName;
-        ;
     }
 
     public virtual void Enter()
