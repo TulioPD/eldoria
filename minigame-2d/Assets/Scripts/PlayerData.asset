@@ -20,7 +20,7 @@ MonoBehaviour:
   wallSlideVelocity: 3
   wallClimbVelocity: 3
   startOffset: {x: 0.3, y: 2.37}
-  stopOffset: {x: 2, y: 2}
+  stopOffset: {x: 0, y: 0.3}
   groundCheckRadius: 0.3
   wallCheckDistance: 0.5
   whatIsGround:

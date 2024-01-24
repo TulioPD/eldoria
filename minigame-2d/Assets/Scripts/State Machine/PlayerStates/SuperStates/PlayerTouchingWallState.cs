@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class PlayerTouchingWallState : PlayerState
 {
     protected bool isTouchingWall;
     protected bool isGrounded;
+    protected bool isTouchingLedge;
     //protected bool grabInput;
     protected bool isOnLedge;
     protected int xInput;
@@ -31,6 +33,13 @@ public class PlayerTouchingWallState : PlayerState
         //isHoldingWall = player.CheckIfHoldingWall();
         isTouchingWall = player.CheckIfTouchingWall();
         isGrounded = player.CheckIfGrounded();
+        isTouchingLedge = player.CheckIfTouchingLedge();
+
+        if (isTouchingWall&& !isTouchingLedge) 
+        {
+            player.LedgeClimbState.SetDetectedPosition(player.transform.position);
+                
+        }
     }
 
     public override void Enter()
@@ -61,6 +70,10 @@ public class PlayerTouchingWallState : PlayerState
         else if (!isTouchingWall || (xInput != player.FacingDirection))
         {
             stateMachine.ChangeState(player.AirState);
+        }
+        else if (isTouchingWall && !isTouchingLedge)
+        {
+            stateMachine.ChangeState(player.LedgeClimbState);
         }
     }
 

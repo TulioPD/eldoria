@@ -35,15 +35,15 @@ public class PlayerLedgeClimbState : PlayerState
         base.DoChecks();
     }
 
-    public override void Enter()
+    public override void Enter()    
     {
         base.Enter();
         player.SetVelocityZero();
         player.transform.position = detectedPosition;
         Debug.Log(detectedPosition);
-        Debug.Log(cornerPosition);
         Debug.Log(player.transform.position);
         cornerPosition = player.DetermineCornerPosition();
+        Debug.Log(cornerPosition);
         startPosition.Set(cornerPosition.x - (player.FacingDirection * playerData.startOffset.x), cornerPosition.y - playerData.startOffset.y);
         stopPosition.Set(cornerPosition.x + (player.FacingDirection * playerData.stopOffset.x), cornerPosition.y + playerData.stopOffset.y);
 
@@ -70,26 +70,29 @@ public class PlayerLedgeClimbState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
+            
         if (isAnimationFinished){
             stateMachine.ChangeState(player.IdleState);
         }
-
-        xInput = player.InputHandler.NormalizedInputX;
-        yInput = player.InputHandler.NormalizedInputY;
-        player.SetVelocityZero();
-        player.transform.localPosition = startPosition;
-
-        if (xInput == player.FacingDirection && isHanging && !isClimbing)
+        else
         {
-            isClimbing = true;
-            player.Animator.SetBool("climbLedge", true);
+            xInput = player.InputHandler.NormalizedInputX;
+            yInput = player.InputHandler.NormalizedInputY;
+            player.SetVelocityZero();
+            player.transform.position = startPosition;
+
+            if (xInput == player.FacingDirection && isHanging && !isClimbing)
+            {
+                isClimbing = true;
+                player.Animator.SetBool("climbLedge", true);
+            }
+
+            else if (yInput == -1 && isHanging && !isClimbing)
+            {
+                stateMachine.ChangeState(player.AirState);
+            }
         }
 
-        else if (yInput == -1 && isHanging && !isClimbing) 
-        {
-            stateMachine.ChangeState(player.AirState);
-        }
     }
 
     public override void PhysicsUpdate()
