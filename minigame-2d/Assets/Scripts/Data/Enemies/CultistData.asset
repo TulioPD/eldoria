@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070b6f4df60051a40933b7701eee0890, type: 3}
   m_Name: CultistData
   m_EditorClassIdentifier: 
-  movementVelocity: 0
+  movementVelocity: 1
   jumpVelocity: 0
   amountOfJumps: 0
-  attackRadius: 0
-  attackDamage: 0
-  attackRate: 0
-  attackCooldown: 0
+  attackRadius: 5
+  attackDamage: 10
+  attackRate: 1
+  attackCooldown: 1
   whatIsPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   dieTime: 0
+  minAgroDistance: 10

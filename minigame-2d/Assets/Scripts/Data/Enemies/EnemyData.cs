@@ -22,5 +22,7 @@ public class EnemyData : ScriptableObject
 
     [Header("Die State")]
     public float dieTime;
+    [Header("Checks")]
+    public float minAgroDistance;
 
 }

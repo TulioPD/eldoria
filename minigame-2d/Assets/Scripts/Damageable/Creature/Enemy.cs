@@ -8,6 +8,7 @@ public class Enemy : Creature
     #region State Variables
     public EnemyStateMachine StateMachine { get; private set; }
     public EnemyIdleState IdleState { get; private set; }
+    public EnemyMoveState MoveState { get; private set; }
     #endregion
     #region Components
     [SerializeField]
@@ -30,6 +31,7 @@ public class Enemy : Creature
         base.Awake();
         StateMachine = new EnemyStateMachine();
         IdleState = new EnemyIdleState(this, StateMachine, enemyData, "idle");
+        MoveState = new EnemyMoveState(this, StateMachine, enemyData, "move");
     }
     protected override void Start()
     {
@@ -64,6 +66,43 @@ public class Enemy : Creature
         workspace.Set(CurrentVelocity.x, velocity);
         RB.velocity = workspace;
         CurrentVelocity = workspace;
+    }
+    #endregion
+    #region Other Functions
+    //public void Flip()
+    //{
+    //    //FacingDirection *= -1;
+    //    transform.Rotate(0.0f, 180.0f*FacingDirection, 0.0f);
+    //    //Debug.Log("Flipping Enemy!");
+    //}
+
+    #endregion
+    #region Check Functions
+    public bool CheckPlayerInMinAgroRange()
+    {
+        Collider2D playerCollider = Physics2D.OverlapCircle(playerCheck.position, enemyData.minAgroDistance, enemyData.whatIsPlayer);
+
+        return playerCollider != null;
+    }
+    //public void CheckIfShouldFlip(float playerDirectionX)
+    //{
+    //    Vector3 scale= transform.localScale;
+    //    if (playerDirectionX < 0)
+    //    {
+    //        scale.x=transform.localScale.x*-1;
+    //    }
+
+    //    else if (playerDirectionX > 0)
+    //    {
+    //        scale.x=transform.localScale.x*1;
+    //    }
+    //    transform.localScale=scale;
+    //}
+    #endregion
+    #region Gizmos
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
     }
     #endregion
 }
