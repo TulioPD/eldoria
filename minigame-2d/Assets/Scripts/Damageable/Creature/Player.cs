@@ -135,8 +135,8 @@ public class Player : Creature
         Gizmos.DrawWireSphere(groundCheck.position, playerData.groundCheckRadius);
 
         // Visualize wall check
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * FacingDirection * playerData.wallCheckDistance);
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * FacingDirection * playerData.wallCheckDistance);
 
         // Visualize ledge check
         Gizmos.color = Color.blue;

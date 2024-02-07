@@ -24,5 +24,8 @@ public class EnemyData : ScriptableObject
     public float dieTime;
     [Header("Checks")]
     public float minAgroDistance;
+    public float wallCheckDistance;
+    public float ledgeCheckDistance;
+    public LayerMask whatIsGround;
 
 }

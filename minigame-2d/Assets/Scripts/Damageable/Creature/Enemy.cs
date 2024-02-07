@@ -19,10 +19,12 @@ public class Enemy : Creature
     #region Check Variables
     [SerializeField]
     private Transform playerCheck;
+    [SerializeField]
+    private Transform wallCheck;
     #endregion
     #region Other Variables
     public Vector2 CurrentVelocity { get; private set; }
-    public int FacingDirection { get; private set; }
+    public int FacingDirection { get; internal set; }
     private Vector2 workspace;
     #endregion
     #region Unity Callback Functions
@@ -69,12 +71,11 @@ public class Enemy : Creature
     }
     #endregion
     #region Other Functions
-    //public void Flip()
-    //{
-    //    //FacingDirection *= -1;
-    //    transform.Rotate(0.0f, 180.0f*FacingDirection, 0.0f);
-    //    //Debug.Log("Flipping Enemy!");
-    //}
+    public void Flip()
+    {
+        transform.Rotate(0.0f, 180.0f * FacingDirection, 0.0f);
+        Debug.Log("Flipping Enemy!");
+    }
 
     #endregion
     #region Check Functions
@@ -84,25 +85,20 @@ public class Enemy : Creature
 
         return playerCollider != null;
     }
-    //public void CheckIfShouldFlip(float playerDirectionX)
-    //{
-    //    Vector3 scale= transform.localScale;
-    //    if (playerDirectionX < 0)
-    //    {
-    //        scale.x=transform.localScale.x*-1;
-    //    }
 
-    //    else if (playerDirectionX > 0)
-    //    {
-    //        scale.x=transform.localScale.x*1;
-    //    }
-    //    transform.localScale=scale;
-    //}
+    public bool CheckForWall()
+    {
+        return Physics2D.Raycast(wallCheck.position, Vector2.right * -FacingDirection, enemyData.wallCheckDistance, enemyData.whatIsGround);
+    }
     #endregion
     #region Gizmos
     private void OnDrawGizmos()
     {
+        Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(wallCheck.position,wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
     }
     #endregion
 }

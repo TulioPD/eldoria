@@ -25,7 +25,6 @@ public class EnemyMoveState : EnemyGroundState
     {
         base.DoChecks();
         isPlayerInMinAgroRange = enemy.CheckPlayerInMinAgroRange();
-        //enemy.CheckIfShouldFlip(playerPosition.x - enemy.transform.position.x);
     }
 
     public override void Enter()
@@ -54,9 +53,18 @@ public class EnemyMoveState : EnemyGroundState
             stateMachine.ChangeState(enemy.IdleState);
         }
         playerPosition = GameObject.Find("Player").transform.position;
-        //Debug.Log("Player position: "+playerPosition);
-
-        
+        if ((playerPosition.x - enemy.transform.position.x) > 0 && enemy.FacingDirection == 1)
+        {
+            enemy.Flip();
+            enemy.FacingDirection = -1;
+            Debug.Log("Enemy looking left");
+        }
+        else if ((playerPosition.x - enemy.transform.position.x) < 0 && enemy.FacingDirection == -1)
+        {
+            enemy.Flip();
+            enemy.FacingDirection = 1;
+            Debug.Log("Enemy looking right");
+        }
         
     }
 
@@ -64,9 +72,14 @@ public class EnemyMoveState : EnemyGroundState
     {
         base.PhysicsUpdate();
         Vector3 directionToPlayer= playerPosition- enemy.transform.position;
-        //Debug.Log("Direction to player: "+directionToPlayer);
-        ChasePlayer(directionToPlayer);
-
+        if (!enemy.CheckForWall())
+        {
+            ChasePlayer(directionToPlayer);
+        }
+        else
+        {
+            enemy.SetVelocityX(0);
+        }
     }
     private void ChasePlayer(Vector3 directionToPlayer)
     {
