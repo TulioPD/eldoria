@@ -17,15 +17,18 @@ MonoBehaviour:
   amountOfJumps: 0
   attackRadius: 5
   attackDamage: 10
-  attackRate: 1
-  attackCooldown: 1
+  attackRate: 5
+  attackCooldown: 5
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
+  projectilePrefab: {fileID: 2101641990685343476, guid: 4599ce2a55d14c04ea263063d688f49b, type: 3}
   dieTime: 0
   minAgroDistance: 10
   wallCheckDistance: 1.26
   ledgeCheckDistance: 0
+  groundCheckDistance: 0
+  closeRangeActionRadius: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256

@@ -19,6 +19,7 @@ public class EnemyData : ScriptableObject
     public float attackRate;
     public float attackCooldown;
     public LayerMask whatIsPlayer;
+    public GameObject projectilePrefab;
 
     [Header("Die State")]
     public float dieTime;
@@ -26,6 +27,8 @@ public class EnemyData : ScriptableObject
     public float minAgroDistance;
     public float wallCheckDistance;
     public float ledgeCheckDistance;
+    public float groundCheckDistance;
+    public float closeRangeActionRadius;
     public LayerMask whatIsGround;
 
 }

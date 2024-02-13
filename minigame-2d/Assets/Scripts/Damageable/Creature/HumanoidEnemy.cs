@@ -5,9 +5,9 @@ using UnityEngine;
 public class HumanoidEnemy : Enemy
 {
     #region State Variables
-    public EnemyMoveState MoveState { get; private set; }
-    public EnemyJumpState JumpState { get; private set; }
-    public EnemyAirState AirState { get; private set; }
+    //public EnemyMoveState MoveState { get; private set; }
+    //public EnemyJumpState JumpState { get; private set; }
+    //public EnemyAirState AirState { get; private set; }
     public EnemyLandState LandState { get; private set; }
     #endregion
     #region Components
@@ -24,9 +24,9 @@ public class HumanoidEnemy : Enemy
     protected override void Awake()
     {
         base.Awake();
-        MoveState = new EnemyMoveState(this, StateMachine, enemyData, "move");
-        JumpState = new EnemyJumpState(this, StateMachine, enemyData, "air");
-        AirState = new EnemyAirState(this, StateMachine, enemyData, "air");
+        //MoveState = new EnemyMoveState(this, StateMachine, enemyData, "move");
+        //JumpState = new EnemyJumpState(this, StateMachine, enemyData, "air");
+        //AirState = new EnemyAirState(this, StateMachine, enemyData, "air");
         LandState = new EnemyLandState(this, StateMachine, enemyData, "land");
     }
     protected override void Start()

@@ -30,7 +30,7 @@ public class EnemyMoveState : EnemyGroundState
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("EnemyMoveState - Chasing player");
+        //Debug.Log("EnemyMoveState - Chasing player");
         enemy.SetVelocityX(enemyData.movementVelocity);
     }
 
@@ -57,13 +57,13 @@ public class EnemyMoveState : EnemyGroundState
         {
             enemy.Flip();
             enemy.FacingDirection = -1;
-            Debug.Log("Enemy looking left");
+            //Debug.Log("Enemy looking left");
         }
         else if ((playerPosition.x - enemy.transform.position.x) < 0 && enemy.FacingDirection == -1)
         {
             enemy.Flip();
             enemy.FacingDirection = 1;
-            Debug.Log("Enemy looking right");
+            //Debug.Log("Enemy looking right");
         }
         
     }

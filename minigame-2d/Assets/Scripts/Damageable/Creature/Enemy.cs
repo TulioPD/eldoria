@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using Unity.VisualScripting;
+
 using UnityEngine;
 
 public class Enemy : Creature
@@ -9,6 +11,9 @@ public class Enemy : Creature
     public EnemyStateMachine StateMachine { get; private set; }
     public EnemyIdleState IdleState { get; private set; }
     public EnemyMoveState MoveState { get; private set; }
+    public EnemyJumpState JumpState { get; private set; }
+    public EnemyAirState AirState { get; private set; }
+    public EnemyAttackState AttackState { get; private set; }
     #endregion
     #region Components
     [SerializeField]
@@ -21,10 +26,13 @@ public class Enemy : Creature
     private Transform playerCheck;
     [SerializeField]
     private Transform wallCheck;
+    [SerializeField]
+    private Transform attackPoint;
     #endregion
     #region Other Variables
     public Vector2 CurrentVelocity { get; private set; }
     public int FacingDirection { get; internal set; }
+    public bool isCooldown { get; internal set; }
     private Vector2 workspace;
     #endregion
     #region Unity Callback Functions
@@ -34,6 +42,9 @@ public class Enemy : Creature
         StateMachine = new EnemyStateMachine();
         IdleState = new EnemyIdleState(this, StateMachine, enemyData, "idle");
         MoveState = new EnemyMoveState(this, StateMachine, enemyData, "move");
+        JumpState = new EnemyJumpState(this, StateMachine, enemyData, "jump");
+        AirState = new EnemyAirState(this, StateMachine, enemyData, "air");
+        AttackState = new EnemyAttackState(this, StateMachine, enemyData, "attack");
     }
     protected override void Start()
     {
@@ -74,7 +85,33 @@ public class Enemy : Creature
     public void Flip()
     {
         transform.Rotate(0.0f, 180.0f * FacingDirection, 0.0f);
-        Debug.Log("Flipping Enemy!");
+    }
+    public void Attack()
+    {
+        GameObject firebolt = Instantiate(enemyData.projectilePrefab, attackPoint.transform.position, attackPoint.rotation);
+        Projectile projectile = firebolt.GetComponent<Projectile>();
+
+        if (projectile != null)
+        {
+            projectile.Initialize(new Vector2(FacingDirection*-1, 0));
+        }
+    }
+    public void StartAttackCooldown(float cooldownDuration)
+    {
+        if (!isCooldown)
+        {
+            StartCoroutine(AttackCooldown(enemyData.attackCooldown));
+        }
+    }
+    private IEnumerator AttackCooldown(float cooldownDuration)
+    {
+        isCooldown = true;
+        Animator.SetBool("cooldown", true);
+        Animator.SetBool("idle", true);
+        yield return new WaitForSeconds(cooldownDuration);
+        isCooldown = false;
+        Animator.SetBool("cooldown", false);
+        Animator.SetBool("idle", false);
     }
 
     #endregion
@@ -85,20 +122,44 @@ public class Enemy : Creature
 
         return playerCollider != null;
     }
+    public bool CheckPlayerInMaxAttackRange()
+    {
+        Collider2D playerCollider = Physics2D.OverlapCircle(playerCheck.position, enemyData.attackRadius, enemyData.whatIsPlayer);
+        return playerCollider != null;
+    }
+    public bool CheckPlayerInCloseRangeAction()
+    {
+        Collider2D playerCollider = Physics2D.OverlapCircle(playerCheck.position, enemyData.closeRangeActionRadius, enemyData.whatIsPlayer);
+        return playerCollider != null;
+    }
 
     public bool CheckForWall()
     {
         return Physics2D.Raycast(wallCheck.position, Vector2.right * -FacingDirection, enemyData.wallCheckDistance, enemyData.whatIsGround);
     }
+    public bool CheckIfGrounded()
+    {
+        return Physics2D.Raycast(wallCheck.position, Vector2.down, enemyData.groundCheckDistance, enemyData.whatIsGround);
+    }
     #endregion
     #region Gizmos
     private void OnDrawGizmos()
     {
+        //min agro range
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
 
+        //wallcheck
         Gizmos.color = Color.red;
         Gizmos.DrawLine(wallCheck.position,wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
+
+        //Player in max Agro range
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
+
+        //Player in close range action
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
     }
     #endregion
 }
