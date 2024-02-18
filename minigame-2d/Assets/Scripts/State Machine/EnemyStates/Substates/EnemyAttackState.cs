@@ -49,9 +49,6 @@ public class EnemyAttackState : EnemyAbilityState
         base.LogicUpdate();
         if (!enemy.isCooldown)
         {
-            // Attack the player
-
-            // Start the attack cooldown
             enemy.StartAttackCooldown(enemyData.attackCooldown);
         }
         if (!isPlayerInAttackRange)

@@ -54,7 +54,6 @@ public class PlayerAirState : PlayerState
         xInput=player.InputHandler.NormalizedInputX;
         jumpInput=player.InputHandler.JumpInput;
         jumpInputStop=player.InputHandler.JumpInputStop;
-        //grabInput=player.InputHandler.GrabInput;
         CheckJumpMultiplier();
         
         if (isGrounded&&player.CurrentVelocity.y<.01f)
@@ -70,10 +69,6 @@ public class PlayerAirState : PlayerState
             player.InputHandler.UseJumpInput();
             stateMachine.ChangeState(player.JumpState);
         }
-        else if (isTouchingWall && grabInput)
-        {
-            //stateMachine.ChangeState(player.WallGrabState);
-        }
         else if (isTouchingWall && xInput == player.FacingDirection && player.CurrentVelocity.y <= 0f)
         {
             stateMachine.ChangeState(player.WallSlideState);
@@ -83,7 +78,6 @@ public class PlayerAirState : PlayerState
             player.CheckIfShouldFlip(xInput);
             player.SetVelocityX(playerData.movementVelocity * xInput);
             player.Animator.SetFloat("yVelocity",player.CurrentVelocity.y);
-            //player.Animator.SetFloat("xVelocity",Mathf.Abs(player.CurrentVelocity.x));
         }
     }
     public override void PhysicsUpdate()

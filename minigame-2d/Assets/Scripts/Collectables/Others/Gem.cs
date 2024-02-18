@@ -13,7 +13,6 @@ public class Gem : MonoBehaviour, ICollectable
 
         if (player == null)
         {
-            Debug.LogWarning("Player not found. Gem collection may not work as expected.");
         }
     }
 
@@ -22,7 +21,6 @@ public class Gem : MonoBehaviour, ICollectable
         if (player != null)
         {
             player.Inventory.AddGems(gemAmount);
-            Debug.Log($"Collected {gemAmount} gems. Total: {player.Inventory.GemAmount}");
 
             if (collectParticlePrefab != null)
             {
@@ -30,10 +28,6 @@ public class Gem : MonoBehaviour, ICollectable
             }
 
             Destroy(gameObject);
-        }
-        else
-        {
-            Debug.LogWarning("Player not found. Gem collection failed.");
         }
     }
 

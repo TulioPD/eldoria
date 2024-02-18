@@ -24,7 +24,6 @@ public class EnemyState
         DoChecks();
         enemy.Animator.SetBool(animBoolName, true);
         startTime = Time.time;
-        Debug.Log(animBoolName);
         isAnimationFinished = false;
     }
 

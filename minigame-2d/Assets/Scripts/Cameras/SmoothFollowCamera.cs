@@ -9,7 +9,6 @@ public class SmoothFollowCamera : MonoBehaviour
     {
         if (target == null)
         {
-            Debug.LogWarning("Target not assigned to the camera script.");
             return;
         }
         Vector3 desiredPosition = new Vector3(target.position.x, target.position.y, transform.position.z);

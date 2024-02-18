@@ -9,7 +9,6 @@ public class PlayerTouchingWallState : PlayerState
     protected bool isTouchingWall;
     protected bool isGrounded;
     protected bool isTouchingLedge;
-    //protected bool grabInput;
     protected bool isOnLedge;
     protected int xInput;
     protected int yInput;
@@ -30,7 +29,6 @@ public class PlayerTouchingWallState : PlayerState
     public override void DoChecks()
     {
         base.DoChecks();
-        //isHoldingWall = player.CheckIfHoldingWall();
         isTouchingWall = player.CheckIfTouchingWall();
         isGrounded = player.CheckIfGrounded();
         isTouchingLedge = player.CheckIfTouchingLedge();
@@ -62,7 +60,6 @@ public class PlayerTouchingWallState : PlayerState
         base.LogicUpdate();
         xInput = player.InputHandler.NormalizedInputX;
         yInput = player.InputHandler.NormalizedInputY;
-        //grabInput = player.InputHandler.GrabInput;
         if (isGrounded)
         {
             stateMachine.ChangeState(player.IdleState);

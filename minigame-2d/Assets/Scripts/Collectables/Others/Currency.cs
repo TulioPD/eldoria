@@ -11,6 +11,5 @@ public class Currency : MonoBehaviour, ICollectable
 
     public void Collect()
     {
-        Debug.Log("Currency collected");
     }
 }

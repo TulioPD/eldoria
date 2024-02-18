@@ -143,23 +143,23 @@ public class Enemy : Creature
     }
     #endregion
     #region Gizmos
-    private void OnDrawGizmos()
-    {
-        //min agro range
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
+    //private void OnDrawGizmos()
+    //{
+    //    //min agro range
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
 
-        //wallcheck
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(wallCheck.position,wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
+    //    //wallcheck
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawLine(wallCheck.position,wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
 
-        //Player in max Agro range
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
+    //    //Player in max Agro range
+    //    Gizmos.color = Color.blue;
+    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
 
-        //Player in close range action
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
-    }
+    //    //Player in close range action
+    //    Gizmos.color = Color.green;
+    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
+    //}
     #endregion
 }

@@ -30,7 +30,6 @@ public class EnemyIdleState : EnemyGroundState
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("EnemyIdleState - Waiting for player");
     }
 
     public override void Exit()
@@ -46,7 +45,6 @@ public class EnemyIdleState : EnemyGroundState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        //Debug.Log("Player in agro: "+isPlayerInMinAgroRange);
         if (isPlayerInMinAgroRange)
         {
             stateMachine.ChangeState(enemy.MoveState);

@@ -33,9 +33,7 @@ public class PlayerGroundState : PlayerState
     {
         base.LogicUpdate();
         xInput=player.InputHandler.NormalizedInputX;
-        //Debug.Log(xInput);
         jumpInput=player.InputHandler.JumpInput;
-        //grabInput=player.InputHandler.GrabInput;
 
         if (jumpInput && player.JumpState.CanJump())
         {
@@ -46,10 +44,6 @@ public class PlayerGroundState : PlayerState
         {
             player.AirState.StartCoyoteTime();
             stateMachine.ChangeState(player.AirState);
-        }
-        else if (isTouchingWall && grabInput && isTouchingWall)
-        {
-            //stateMachine.ChangeState(player.WallGrabState);
         }
         else
         {

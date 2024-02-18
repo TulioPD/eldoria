@@ -15,19 +15,14 @@ public class Projectile : MonoBehaviour
     }
     public void Awake()
     {
-        Debug.Log("projectile shot");
         rb = GetComponent<Rigidbody2D>();
         SetVelocityX(projectileData.movementVelocity);
-        //projectileData = data;
-        //Initialize(projectileData, Vector2.right);
     }
 
     private void Update()
     {
-        // Move the projectile
         rb.MovePosition(rb.position + movementDirection * projectileData.movementVelocity * Time.deltaTime);
         
-        // Destroy the projectile after a certain lifetime
         projectileData.lifeTime -= Time.deltaTime;
         if (projectileData.lifeTime <= 0)
         {
@@ -44,16 +39,13 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player hit");
             IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable != null)
             {
-                Debug.Log("Player takes damage");
                 damageable.TakeDamage(projectileData.basicDamage);
                 Destroy(gameObject);
             }
             Destroy(gameObject);
-            Debug.Log($"{collision.gameObject.name} takes {projectileData.basicDamage}");
         }
     }
 }

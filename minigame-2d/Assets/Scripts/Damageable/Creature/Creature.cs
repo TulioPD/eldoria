@@ -2,7 +2,6 @@ using UnityEngine;
 
 public abstract class Creature : MonoBehaviour, IDamageable
 {
-    // Serialized fields for Unity Editor
     [SerializeField] protected int health;
     [SerializeField] protected int maxHealth;
     [SerializeField] protected int resistance;
@@ -12,7 +11,6 @@ public abstract class Creature : MonoBehaviour, IDamageable
 
     protected virtual void Start()
     {
-        Debug.Log($"{Name} has been created with {health} health, {maxHealth} max health, {resistance} resistance, and {damageTaken} damage.");
     }
 
     protected virtual void Update()
@@ -30,7 +28,6 @@ public abstract class Creature : MonoBehaviour, IDamageable
     public void TakeDamage(int damageAmount)
     {
         health -= damageAmount;
-        Debug.Log($"{Name} takes {damageAmount} damage. Remaining health: {health}");
     }
 
     public bool ShouldDie()
@@ -40,6 +37,5 @@ public abstract class Creature : MonoBehaviour, IDamageable
 
     public void Die()
     {
-        Debug.Log($"{Name} has died.");
     }
 }

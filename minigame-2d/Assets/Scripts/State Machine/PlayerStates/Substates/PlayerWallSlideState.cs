@@ -14,7 +14,6 @@ public class PlayerWallSlideState : PlayerTouchingWallState
     {
         base.LogicUpdate();
         player.SetVelocityY(-playerData.wallSlideVelocity);
-        Debug.Log(player.FacingDirection);
     }
 
     public override void Enter()
