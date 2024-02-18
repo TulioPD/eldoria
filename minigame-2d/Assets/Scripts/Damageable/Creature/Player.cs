@@ -30,7 +30,7 @@ public class Player : Creature
     #region Other Variables
     private Vector2 workspace;
     public Vector2 CurrentVelocity { get; private set; }
-    public int FacingDirection { get; private set; }
+    public int FacingDirection { get; internal set; }
     #endregion
     #region Check Variables
     [SerializeField]
@@ -148,10 +148,11 @@ public class Player : Creature
     }
     #endregion
     #region Other Functions
-    private void Flip()
+    internal void Flip()
     {
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
+        Debug.Log("Flipped");
     }
     public Vector2 DetermineCornerPosition()
     {

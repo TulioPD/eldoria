@@ -14,21 +14,23 @@ public class PlayerWallSlideState : PlayerTouchingWallState
     {
         base.LogicUpdate();
         player.SetVelocityY(-playerData.wallSlideVelocity);
+        Debug.Log(player.FacingDirection);
     }
 
-    //TODO: Buscar mejor manera de controlar el flip del jugador al entrar y salir. Probablemente simplemente editar sprites desde GIMP
     public override void Enter()
     {
         base.Enter();
-        //player.transform.Rotate(0.0f, 180.0f, 0.0f);
+        player.transform.localScale=new Vector2(player.transform.localScale.x*-1, player.transform.localScale.y);
     }
     public override void Exit ()
     {
         base.Exit();
-        //player.transform.Rotate(0.0f, 180.0f, 0.0f);
+        player.transform.localScale = new Vector2(player.transform.localScale.x * -1, player.transform.localScale.y);
     }
     public override void DoChecks()
     {
         base.DoChecks();
     }
+    
+    
 }
