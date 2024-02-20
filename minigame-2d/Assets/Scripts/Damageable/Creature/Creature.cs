@@ -2,10 +2,12 @@ using UnityEngine;
 
 public abstract class Creature : MonoBehaviour, IDamageable
 {
-    [SerializeField] protected int health;
-    [SerializeField] protected int maxHealth;
+    public int health;
+    public int maxHealth;
     [SerializeField] protected int resistance;
     [SerializeField] protected int damageTaken;
+    public PlayerStateMachine StateMachine { get; private set; }
+    
 
     public string Name { get; protected set; }
 
@@ -23,19 +25,14 @@ public abstract class Creature : MonoBehaviour, IDamageable
 
     protected virtual void Awake()
     {
+        StateMachine = new PlayerStateMachine();
     }
 
-    public void TakeDamage(int damageAmount)
-    {
-        health -= damageAmount;
-    }
+    public virtual void TakeDamage(int damageAmount)=> health -= damageAmount;
+    
 
-    public bool ShouldDie()
-    {
-        return health <= 0;
-    }
+    public bool ShouldDie()=> health <= 0;
+    
 
-    public void Die()
-    {
-    }
+    public void Die(float lifetime)=>Destroy(gameObject, lifetime);
 }

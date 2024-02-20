@@ -3,14 +3,16 @@ using UnityEngine;
 public class Player : Creature
 {
     #region State Variables
-    public PlayerStateMachine StateMachine { get; private set; }
+    
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
     public PlayerJumpState JumpState { get; private set; }
     public PlayerAirState AirState { get; private set; }
     public PlayerLandState LandState { get; private set; }
+    public PlayerTakeDamageState TakeDamageState { get; private set; }
     public PlayerWallSlideState WallSlideState { get; private set; }
     public PlayerLedgeClimbState LedgeClimbState { get; private set; }
+    public PlayerDeadState DeadState { get; private set; }
     [SerializeField]
     private PlayerData playerData;
     #endregion
@@ -38,7 +40,7 @@ public class Player : Creature
     protected override void Awake()
     {
         base.Awake();
-        StateMachine = new PlayerStateMachine();
+        
         IdleState= new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
         JumpState = new PlayerJumpState(this, StateMachine, playerData, "air");
@@ -46,6 +48,8 @@ public class Player : Creature
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
         WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
         LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, "ledgeClimbState");
+        TakeDamageState = new PlayerTakeDamageState(this, StateMachine, playerData, "takeDamage");
+        DeadState = new PlayerDeadState(this, StateMachine, playerData, "dead");
     }
     
     protected override void Start()
@@ -57,6 +61,8 @@ public class Player : Creature
         Inventory = GetComponent<Inventory>();
         Animator = GetComponent<Animator>();
         StateMachine.Initialize(IdleState);
+        this.maxHealth=playerData.maxHealth;
+        this.health = maxHealth;
     }
 
     protected override void Update()
@@ -143,6 +149,11 @@ public class Player : Creature
     {
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
+    }
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+        StateMachine.ChangeState(TakeDamageState);
     }
     public Vector2 DetermineCornerPosition()
     {

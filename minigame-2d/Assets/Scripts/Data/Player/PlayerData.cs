@@ -32,4 +32,14 @@ public class PlayerData : ScriptableObject
     public float groundCheckRadius = 0.3f;
     public float wallCheckDistance = 0.5f;
     public LayerMask whatIsGround;
+
+    [Header ("stats")]
+    public int maxHealth = 100;
+    public int currentHealth;
+    public int basicDamage = 10;
+    public float lifeTime = 2f;
+    public float attackRate = 1f;
+    public float nextAttackTime = 0f;
+    public float attackRange = 0.5f;
+
 }
