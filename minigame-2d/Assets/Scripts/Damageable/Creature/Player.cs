@@ -4,6 +4,7 @@ public class Player : Creature
 {
     #region State Variables
     
+    public PlayerStateMachine StateMachine { get; private set; }
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
     public PlayerJumpState JumpState { get; private set; }
@@ -40,7 +41,7 @@ public class Player : Creature
     protected override void Awake()
     {
         base.Awake();
-        
+        StateMachine = new PlayerStateMachine();
         IdleState= new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
         JumpState = new PlayerJumpState(this, StateMachine, playerData, "air");
@@ -63,6 +64,10 @@ public class Player : Creature
         StateMachine.Initialize(IdleState);
         this.maxHealth=playerData.maxHealth;
         this.health = maxHealth;
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
     }
 
     protected override void Update()
@@ -154,6 +159,10 @@ public class Player : Creature
     {
         base.TakeDamage(damage);
         StateMachine.ChangeState(TakeDamageState);
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(health);
+        }
     }
     public Vector2 DetermineCornerPosition()
     {

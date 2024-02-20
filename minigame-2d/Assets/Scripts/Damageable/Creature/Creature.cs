@@ -4,15 +4,18 @@ public abstract class Creature : MonoBehaviour, IDamageable
 {
     public int health;
     public int maxHealth;
+    public HealthBar healthBar;
     [SerializeField] protected int resistance;
-    [SerializeField] protected int damageTaken;
-    public PlayerStateMachine StateMachine { get; private set; }
-    
+    [SerializeField] protected int damageTaken;    
 
     public string Name { get; protected set; }
 
     protected virtual void Start()
     {
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
     }
 
     protected virtual void Update()
@@ -25,10 +28,16 @@ public abstract class Creature : MonoBehaviour, IDamageable
 
     protected virtual void Awake()
     {
-        StateMachine = new PlayerStateMachine();
     }
 
-    public virtual void TakeDamage(int damageAmount)=> health -= damageAmount;
+    public virtual void TakeDamage(int damageAmount)
+    {
+        health -= damageAmount;
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(health);
+        }
+    }
     
 
     public bool ShouldDie()=> health <= 0;
