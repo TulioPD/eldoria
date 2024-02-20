@@ -68,6 +68,7 @@ public class Player : Creature
         {
             healthBar.SetMaxHealth(maxHealth);
         }
+
     }
 
     protected override void Update()
@@ -159,10 +160,6 @@ public class Player : Creature
     {
         base.TakeDamage(damage);
         StateMachine.ChangeState(TakeDamageState);
-        if (healthBar != null)
-        {
-            healthBar.SetHealth(health);
-        }
     }
     public Vector2 DetermineCornerPosition()
     {

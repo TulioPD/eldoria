@@ -12,10 +12,7 @@ public abstract class Creature : MonoBehaviour, IDamageable
 
     protected virtual void Start()
     {
-        if (healthBar != null)
-        {
-            healthBar.SetMaxHealth(maxHealth);
-        }
+        
     }
 
     protected virtual void Update()
