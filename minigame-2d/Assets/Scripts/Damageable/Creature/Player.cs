@@ -14,6 +14,7 @@ public class Player : Creature
     public PlayerWallSlideState WallSlideState { get; private set; }
     public PlayerLedgeClimbState LedgeClimbState { get; private set; }
     public PlayerDeadState DeadState { get; private set; }
+    public PlayerAttackState AttackState { get; private set; }
     [SerializeField]
     private PlayerData playerData;
     #endregion
@@ -35,6 +36,8 @@ public class Player : Creature
     private Transform wallCheck;
     [SerializeField]
     private Transform ledgeCheck;
+    [SerializeField]
+    internal Transform attackPoint;
     #endregion
 
     #region Unity Callback Functions
@@ -51,6 +54,7 @@ public class Player : Creature
         LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, "ledgeClimbState");
         TakeDamageState = new PlayerTakeDamageState(this, StateMachine, playerData, "takeDamage");
         DeadState = new PlayerDeadState(this, StateMachine, playerData, "dead");
+        AttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
     }
     
     protected override void Start()

@@ -614,6 +614,37 @@ Transform:
   - {fileID: 1063213606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &713960564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713960565}
+  m_Layer: 3
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &713960565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713960564}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.087, y: 1.615, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2109092874}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747672993
 GameObject:
   m_ObjectHideFlags: 0
@@ -29476,6 +29507,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 164e18f8-2427-472b-b7f9-a5047ad68be0
     m_ActionName: BaseGameplay/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2109092871}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7bef8481-9f7d-453a-9427-dbf2f1f3fbb9
+    m_ActionName: BaseGameplay/Attack[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: BaseGameplay
@@ -29587,6 +29634,7 @@ MonoBehaviour:
   groundCheck: {fileID: 2033313756}
   wallCheck: {fileID: 1732707828}
   ledgeCheck: {fileID: 1557188760}
+  attackPoint: {fileID: 713960565}
 --- !u!212 &2109092873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29655,6 +29703,7 @@ Transform:
   - {fileID: 2033313756}
   - {fileID: 1732707828}
   - {fileID: 1557188760}
+  - {fileID: 713960565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2109092875
@@ -29758,6 +29807,10 @@ PrefabInstance:
     - target: {fileID: 4451057322640412914, guid: 8659d5f345c723e4485bdfce1890382c, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614630363893882338, guid: 8659d5f345c723e4485bdfce1890382c, type: 3}
+      propertyPath: health
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

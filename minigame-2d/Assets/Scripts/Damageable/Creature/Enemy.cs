@@ -14,6 +14,8 @@ public class Enemy : Creature
     public EnemyJumpState JumpState { get; private set; }
     public EnemyAirState AirState { get; private set; }
     public EnemyAttackState AttackState { get; private set; }
+    public EnemyDeadState DeadState { get; private set; }
+    public EnemyTakeDamageState TakeDamageState { get; private set; }
     #endregion
     #region Components
     [SerializeField]
@@ -45,6 +47,8 @@ public class Enemy : Creature
         JumpState = new EnemyJumpState(this, StateMachine, enemyData, "jump");
         AirState = new EnemyAirState(this, StateMachine, enemyData, "air");
         AttackState = new EnemyAttackState(this, StateMachine, enemyData, "attack");
+        DeadState = new EnemyDeadState(this, StateMachine, enemyData, "dead");
+        TakeDamageState = new EnemyTakeDamageState(this, StateMachine, enemyData, "takeDamage");
     }
     protected override void Start()
     {
@@ -53,6 +57,8 @@ public class Enemy : Creature
         RB = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         StateMachine.Initialize(IdleState);
+        this.maxHealth = enemyData.maxHealth;
+        this.health = maxHealth;
     }
     protected override void Update()
     {
@@ -93,7 +99,7 @@ public class Enemy : Creature
 
         if (projectile != null)
         {
-            projectile.Initialize(new Vector2(FacingDirection*-1, 0));
+            projectile.Initialize(new Vector2(FacingDirection*-1, 0),this.tag);
         }
     }
     public void StartAttackCooldown(float cooldownDuration)
@@ -162,4 +168,11 @@ public class Enemy : Creature
     //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
     //}
     #endregion
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+        StateMachine.ChangeState(TakeDamageState);
+    }
+    private void AnimationTrigger() => StateMachine.State.AnimationTrigger();
+    private void AnimationFinishTrigger() => StateMachine.State.AnimationFinishTrigger();
 }

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 539d6f01cb0e21445afa2a1b6f5db121, type: 3}
-  m_Name: FireBoltData
+  m_Name: Arrow_1Data
   m_EditorClassIdentifier: 
-  movementVelocity: 20
+  movementVelocity: 30
   lifeTime: 3
-  basicDamage: 10
+  basicDamage: 25
   basicKnockback: 1
   basicStun: 0
   basicSlow: 0

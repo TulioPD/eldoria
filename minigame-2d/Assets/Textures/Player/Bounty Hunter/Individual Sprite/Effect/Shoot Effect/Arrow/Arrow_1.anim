@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cultist-TakeDamage
+  m_Name: Arrow_1
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 48de754c7a00dd246915db05d491f2a1, type: 3}
-    - time: 0.125
-      value: {fileID: 21300000, guid: 3d9ac2f822a64df4095ba66c24918a35, type: 3}
+      value: {fileID: 21300000, guid: a61a40380f0f38e43b83992b8584c5ed, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 0e43319291c25584ebab7875d9b46406, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: 91ab573521f60a44f898b4d06196c595, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: a375654e21f1c064680b655d450edbb8, type: 3}
+      value: {fileID: 21300000, guid: 07ea0fc1155aaa14784b8ce2a77c67d9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 8
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -48,20 +50,21 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 48de754c7a00dd246915db05d491f2a1, type: 3}
-    - {fileID: 21300000, guid: 3d9ac2f822a64df4095ba66c24918a35, type: 3}
-    - {fileID: 21300000, guid: a375654e21f1c064680b655d450edbb8, type: 3}
+    - {fileID: 21300000, guid: a61a40380f0f38e43b83992b8584c5ed, type: 3}
+    - {fileID: 21300000, guid: 0e43319291c25584ebab7875d9b46406, type: 3}
+    - {fileID: 21300000, guid: 91ab573521f60a44f898b4d06196c595, type: 3}
+    - {fileID: 21300000, guid: 07ea0fc1155aaa14784b8ce2a77c67d9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.375
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -75,11 +78,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.25
-    functionName: AnimationTrigger
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

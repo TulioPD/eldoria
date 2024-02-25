@@ -31,4 +31,12 @@ public class EnemyData : ScriptableObject
     public float closeRangeActionRadius;
     public LayerMask whatIsGround;
 
+    [Header("Stats")]
+    public int maxHealth;
+    public int currentHealth;
+    public int basicDamage;
+    public float lifeTime;
+    public float nextAttackTime;
+    public float attackRange;
+
 }

@@ -15,6 +15,7 @@ MonoBehaviour:
   movementVelocity: 10
   jumpVelocity: 10
   amountOfJumps: 1
+  arrowPrefab: {fileID: 7318150470393164194, guid: 53a8458ab452b1041a97cc558bdec39f, type: 3}
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 0.5
   wallSlideVelocity: 3
@@ -26,3 +27,10 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  maxHealth: 100
+  currentHealth: 0
+  basicDamage: 10
+  lifeTime: 2
+  attackRate: 1
+  nextAttackTime: 0
+  attackRange: 0.5

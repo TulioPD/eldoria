@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeadState : PlayerState
+public class EnemyDeadState : EnemyState
 {
-    public PlayerDeadState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+    public EnemyDeadState(Enemy enemy, EnemyStateMachine stateMachine, EnemyData enemyData, string animBoolName) : base(enemy, stateMachine, enemyData, animBoolName)
     {
     }
 
@@ -26,8 +26,8 @@ public class PlayerDeadState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        //disable player
-        player.gameObject.SetActive(false);
+        //disable enemy
+        enemy.gameObject.SetActive(false);
     }
 
     public override void Exit()

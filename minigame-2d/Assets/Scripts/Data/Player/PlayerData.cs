@@ -12,6 +12,9 @@ public class PlayerData : ScriptableObject
     public float jumpVelocity = 10f;
     public int amountOfJumps = 1;
 
+    [Header("Attack state")]
+    public GameObject arrowPrefab;
+
     [Header("In Air State")]
     public float coyoteTime = 0.2f;
     public float variableJumpHeightMultiplier = 0.5f;
@@ -38,7 +41,7 @@ public class PlayerData : ScriptableObject
     public int currentHealth;
     public int basicDamage = 10;
     public float lifeTime = 2f;
-    public float attackRate = 1f;
+    public float attackRate = 2f;
     public float nextAttackTime = 0f;
     public float attackRange = 0.5f;
 

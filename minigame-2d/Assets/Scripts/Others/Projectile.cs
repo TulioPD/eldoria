@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -7,12 +6,16 @@ public class Projectile : MonoBehaviour
     protected ProjectileData projectileData;
     private Rigidbody2D rb;
     private Vector2 movementDirection;
-    private Enemy enemy;
+    private string shooterTag;
+    private float lifetime;
 
-    public void Initialize(Vector2 direction)
+    public void Initialize(Vector2 direction, string shooterTag)
     {
         movementDirection = direction.normalized;
+        this.shooterTag = shooterTag;
+        lifetime = projectileData.lifeTime;
     }
+
     public void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,11 +25,11 @@ public class Projectile : MonoBehaviour
     private void Update()
     {
         rb.MovePosition(rb.position + movementDirection * projectileData.movementVelocity * Time.deltaTime);
-        
-        projectileData.lifeTime -= Time.deltaTime;
-        if (projectileData.lifeTime <= 0)
+
+        lifetime -= Time.deltaTime;
+        if (lifetime <= 0)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -37,16 +40,15 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if ((collision.gameObject.CompareTag("Player") && shooterTag == "Enemy") ||
+            (collision.gameObject.CompareTag("Enemy") && shooterTag == "Player"))
         {
             IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(projectileData.basicDamage);
-                Destroy(gameObject);
             }
             Destroy(gameObject);
         }
     }
 }
-

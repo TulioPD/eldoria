@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeadState : PlayerState
+public class EnemyTakeDamageState : EnemyState
 {
-    public PlayerDeadState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+    public EnemyTakeDamageState(Enemy enemy, EnemyStateMachine stateMachine, EnemyData enemyData, string animBoolName) : base(enemy, stateMachine, enemyData, animBoolName)
     {
     }
 
@@ -16,6 +16,14 @@ public class PlayerDeadState : PlayerState
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
+        if (enemy.ShouldDie())
+        {
+            enemy.StateMachine.ChangeState(enemy.DeadState);
+        }
+        else
+        {
+            enemy.StateMachine.ChangeState(enemy.IdleState);
+        }
     }
 
     public override void DoChecks()
@@ -26,8 +34,6 @@ public class PlayerDeadState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        //disable player
-        player.gameObject.SetActive(false);
     }
 
     public override void Exit()
