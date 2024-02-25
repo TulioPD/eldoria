@@ -38,12 +38,12 @@ public class Projectile : MonoBehaviour
         rb.velocity = new Vector2(velocity, rb.velocity.y);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if ((collision.gameObject.CompareTag("Player") && shooterTag == "Enemy") ||
-            (collision.gameObject.CompareTag("Enemy") && shooterTag == "Player"))
+        if ((other.CompareTag("Player") && shooterTag == "Enemy") ||
+            (other.CompareTag("Enemy") && shooterTag == "Player"))
         {
-            IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+            IDamageable damageable = other.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(projectileData.basicDamage);
@@ -51,4 +51,5 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
