@@ -13,15 +13,7 @@ public class Inventory : MonoBehaviour
     public List<GameObject> Items { get; private set; } = new List<GameObject>();
 
     public void AddCoins(int amount) => CoinAmount += amount;
-    public void AddGems(int amount)
-    {
-        GemAmount += amount;
-        if (GemAmount == 10)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
-        }
-        coinText.text = "Gems remaining = "+(10-GemAmount).ToString();
-    }
+    public void AddGems(int amount) => GemAmount += amount;
     public void AddItem(GameObject item) => Items.Add(item);
 
 }
