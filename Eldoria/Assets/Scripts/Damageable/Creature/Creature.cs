@@ -6,7 +6,8 @@ public abstract class Creature : MonoBehaviour, IDamageable
     public int maxHealth;
     public HealthBar healthBar;
     [SerializeField] protected int resistance;
-    [SerializeField] protected int damageTaken;    
+    [SerializeField] protected int damageTaken;
+    //public CreatureData creatureData;
 
     public string Name { get; protected set; }
 

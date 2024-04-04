@@ -25,11 +25,11 @@ public class Enemy : Creature
     #endregion
     #region Check Variables
     [SerializeField]
-    private Transform playerCheck;
+    protected Transform playerCheck;
     [SerializeField]
-    private Transform wallCheck;
+    protected Transform wallCheck;
     [SerializeField]
-    private Transform attackPoint;
+    protected Transform attackPoint;
     #endregion
     #region Other Variables
     public Vector2 CurrentVelocity { get; private set; }
@@ -92,15 +92,9 @@ public class Enemy : Creature
     {
         transform.Rotate(0.0f, 180.0f * FacingDirection, 0.0f);
     }
-    public void Attack()
+    public virtual void Attack()
     {
-        GameObject firebolt = Instantiate(enemyData.projectilePrefab, attackPoint.transform.position, attackPoint.rotation);
-        Projectile projectile = firebolt.GetComponent<Projectile>();
-
-        if (projectile != null)
-        {
-            projectile.Initialize(new Vector2(FacingDirection*-1, 0),this.tag);
-        }
+        Debug.Log("Enemy attacking");
     }
     public void StartAttackCooldown(float cooldownDuration)
     {
@@ -149,24 +143,24 @@ public class Enemy : Creature
     }
     #endregion
     #region Gizmos
-    //private void OnDrawGizmos()
-    //{
-    //    //min agro range
-    //    Gizmos.color = Color.yellow;
-    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
+    private void OnDrawGizmos()
+    {
+        //min agro range
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
 
-    //    //wallcheck
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawLine(wallCheck.position,wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
+        //wallcheck
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
 
-    //    //Player in max Agro range
-    //    Gizmos.color = Color.blue;
-    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
+        //Player in max Agro range
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
 
-    //    //Player in close range action
-    //    Gizmos.color = Color.green;
-    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
-    //}
+        //Player in close range action
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
+    }
     #endregion
     public override void TakeDamage(int damage)
     {

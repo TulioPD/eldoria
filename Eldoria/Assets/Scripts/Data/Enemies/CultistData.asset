@@ -9,20 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b6f4df60051a40933b7701eee0890, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e776dd2a47940b41bc6ae51a2b9a6f1, type: 3}
   m_Name: CultistData
   m_EditorClassIdentifier: 
+  id: 1
+  maxHealth: 20
   movementVelocity: 1
-  jumpVelocity: 0
-  amountOfJumps: 0
-  attackRadius: 5
+  attackRange: 5
+  basicDamage: 10
+  lifeTime: 0
+  nextAttackTime: 5
+  mitigation: 0
+  attackRadius: 7
   attackDamage: 10
   attackRate: 5
   attackCooldown: 5
+  jumpVelocity: 0
+  amountOfJumps: 0
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
-  projectilePrefab: {fileID: 2101641990685343476, guid: 4599ce2a55d14c04ea263063d688f49b, type: 3}
   dieTime: 0
   minAgroDistance: 10
   wallCheckDistance: 1.26
@@ -32,9 +38,3 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  maxHealth: 50
-  currentHealth: 0
-  basicDamage: 0
-  lifeTime: 0
-  nextAttackTime: 0
-  attackRange: 0

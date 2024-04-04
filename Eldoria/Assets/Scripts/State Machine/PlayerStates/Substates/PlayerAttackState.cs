@@ -36,7 +36,7 @@ public class PlayerAttackState : PlayerAbilityState
             projectile.Initialize(new Vector2(player.FacingDirection, 0), player.tag);
         }
         isAbilityDone = false;
-        Debug.Log("Attack" + Time.deltaTime);
+        //Debug.Log("Attack" + Time.deltaTime);
     }
 
     public override void Exit()
