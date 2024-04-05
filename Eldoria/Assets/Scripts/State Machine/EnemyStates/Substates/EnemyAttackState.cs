@@ -19,6 +19,7 @@ public class EnemyAttackState : EnemyAbilityState
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
+        stateMachine.ChangeState(enemy.IdleState);
     }
 
     public override void DoChecks()
