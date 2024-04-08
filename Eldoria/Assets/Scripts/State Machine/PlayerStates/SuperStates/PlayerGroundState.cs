@@ -51,6 +51,12 @@ public class PlayerGroundState : PlayerState
             timeSinceLastAttack = 0f;
         }
 
+        if (player.InputHandler.SkillInput)
+        {
+            player.SetVelocityX(0);
+            stateMachine.ChangeState(player.SkillState);
+        }
+
         if (jumpInput && player.JumpState.CanJump())
         {
             player.InputHandler.UseJumpInput();

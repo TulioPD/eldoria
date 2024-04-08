@@ -15,10 +15,12 @@ public class Player : Creature
     public PlayerLedgeClimbState LedgeClimbState { get; private set; }
     public PlayerDeadState DeadState { get; private set; }
     public PlayerAttackState AttackState { get; private set; }
+    public PlayerSkillState SkillState { get; private set; }
     [SerializeField]
     private PlayerData playerData;
     #endregion
     #region Components
+    public AnimatorOverrideController controller;
     public Animator Animator { get; private set; }
     public InputHandler InputHandler { get; private set; }
     public Rigidbody2D RB { get; private set; }
@@ -28,6 +30,7 @@ public class Player : Creature
     private Vector2 workspace;
     public Vector2 CurrentVelocity { get; private set; }
     public int FacingDirection { get; internal set; }
+    //public int SelectedSkill { get; internal set; }
     #endregion
     #region Check Variables
     [SerializeField]
@@ -55,6 +58,12 @@ public class Player : Creature
         TakeDamageState = new PlayerTakeDamageState(this, StateMachine, playerData, "takeDamage");
         DeadState = new PlayerDeadState(this, StateMachine, playerData, "dead");
         AttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        SkillState = new PlayerSkillState(this, StateMachine, playerData, "skill");
+    }
+
+    public void SetAnimator()
+    {
+        this.Animator = Animator;
     }
     
     protected override void Start()
@@ -65,6 +74,7 @@ public class Player : Creature
         InputHandler = GetComponent<InputHandler>();
         Inventory = GetComponent<Inventory>();
         Animator = GetComponent<Animator>();
+        controller= GetComponent<AnimatorOverrideController>();
         StateMachine.Initialize(IdleState);
         this.maxHealth=playerData.maxHealth;
         this.health = maxHealth;
@@ -89,6 +99,8 @@ public class Player : Creature
     }
     #endregion
     #region Set Functions
+    internal void SetSkill(int selectedSkill) => playerData.currentSkill = selectedSkill; 
+
     public void SetVelocityX(float velocity)
     {
         workspace.Set(velocity, CurrentVelocity.y);
@@ -164,6 +176,35 @@ public class Player : Creature
     {
         base.TakeDamage(damage);
         StateMachine.ChangeState(TakeDamageState);
+    }
+
+    //TODO:Move skills to a skilltree system
+    public void Shoot()
+    {
+        GameObject arrow = GameObject.Instantiate(playerData.arrowPrefab, attackPoint.transform.position, Quaternion.identity);
+        Projectile projectile = arrow.GetComponent<Projectile>();
+        if (projectile != null)
+        {
+            projectile.Initialize(new Vector2(FacingDirection, 0), tag);
+        }
+        
+    }
+
+    public void MeleeAttack()
+    {
+        SetVelocityZero();
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint.position, playerData.attackRange);
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("Enemy"))
+            {
+                IDamageable enemy = collider.gameObject.GetComponent<IDamageable>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(playerData.basicDamage);
+                }
+            }
+        }
     }
     public Vector2 DetermineCornerPosition()
     {

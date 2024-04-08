@@ -12,6 +12,8 @@ public class InputHandler : MonoBehaviour
     public bool JumpInput { get; private set;}
     public bool JumpInputStop { get; private set;}
     public bool AttackInput { get; private set;}
+    public bool SkillInput { get; private set;}
+    public bool InteractInput { get; private set;}
     [SerializeField] private float inputHoldTime=.2f;
     private float jumpInputStartTime;
 
@@ -29,14 +31,20 @@ public class InputHandler : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if (context.started)
-        {
-            AttackInput = true;
-        }
-        if (context.canceled)
-        {
-            AttackInput = false;
-        }
+        if (context.started) { AttackInput = true; }
+        if (context.canceled) { AttackInput = false; }
+    }
+
+    public void OnSkill(InputAction.CallbackContext context)
+    {
+        if (context.started) { SkillInput = true; }
+        if (context.canceled) { SkillInput = false; }
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.started) {  InteractInput = true; }
+        if (context.canceled) {  InteractInput = false; }
     }
 
     public void OnJump(InputAction.CallbackContext context)
