@@ -20,4 +20,7 @@ public class EnemyData : CreatureData
     public float closeRangeActionRadius;
     public LayerMask whatIsGround;
 
+    [Header("Other")]
+    public float sightAngle = 45f;
+
 }

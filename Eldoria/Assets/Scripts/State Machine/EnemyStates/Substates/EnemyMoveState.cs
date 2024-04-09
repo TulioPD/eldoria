@@ -24,7 +24,7 @@ public class EnemyMoveState : EnemyGroundState
     public override void DoChecks()
     {
         base.DoChecks();
-        isPlayerInMinAgroRange = enemy.CheckPlayerInMinAgroRange();
+        isPlayerInMinAgroRange = enemy.CheckPlayerInMinAggroRange();
     }
 
     public override void Enter()
@@ -47,21 +47,8 @@ public class EnemyMoveState : EnemyGroundState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (!isPlayerInMinAgroRange)
-        {
-            stateMachine.ChangeState(enemy.IdleState);
-        }
         playerPosition = GameObject.Find("Player").transform.position;
-        if ((playerPosition.x - enemy.transform.position.x) > 0 && enemy.FacingDirection == 1)
-        {
-            enemy.Flip();
-            enemy.FacingDirection = -1;
-        }
-        else if ((playerPosition.x - enemy.transform.position.x) < 0 && enemy.FacingDirection == -1)
-        {
-            enemy.Flip();
-            enemy.FacingDirection = 1;
-        }
+        
         
     }
 
@@ -75,6 +62,7 @@ public class EnemyMoveState : EnemyGroundState
         }
         else
         {
+            stateMachine.ChangeState(enemy.IdleState);
             enemy.SetVelocityX(0);
         }
     }

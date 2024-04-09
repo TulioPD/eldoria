@@ -24,7 +24,7 @@ public class EnemyIdleState : EnemyGroundState
     public override void DoChecks()
     {
         base.DoChecks();
-        isPlayerInMinAgroRange = enemy.CheckPlayerInMinAgroRange();
+        isPlayerInMinAgroRange = enemy.CheckPlayerInMinAggroRange();
     }
 
     public override void Enter()
@@ -45,10 +45,6 @@ public class EnemyIdleState : EnemyGroundState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (isPlayerInMinAgroRange)
-        {
-            stateMachine.ChangeState(enemy.MoveState);
-        }
     }
 
     public override void PhysicsUpdate()

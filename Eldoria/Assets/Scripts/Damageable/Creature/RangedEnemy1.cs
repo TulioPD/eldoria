@@ -27,13 +27,16 @@ public class RangedEnemy1 : Enemy
 
     public override void Attack()
     {
+        base.Attack();
         if (enemyData == null || attackPoint == null)
         {
-            Debug.LogError("data or attackPoint is null.");
+            Debug.LogError("Data or attackPoint is null.");
             return;
         }
 
-        GameObject firebolt = Instantiate(projectilePrefab, attackPoint.transform.position, attackPoint.rotation);
+        Vector2 directionToPlayer = (FindPlayerPosition() - (Vector2)attackPoint.position).normalized;
+
+        GameObject firebolt = Instantiate(projectilePrefab, attackPoint.transform.position, Quaternion.identity);
         if (firebolt == null)
         {
             Debug.LogError("Failed to instantiate projectilePrefab.");
@@ -44,8 +47,9 @@ public class RangedEnemy1 : Enemy
 
         if (projectile != null)
         {
-            projectile.Initialize(new Vector2(FacingDirection * -1, 0), this.tag);
+            projectile.Initialize(directionToPlayer, this.tag);
         }
     }
+
 
 }

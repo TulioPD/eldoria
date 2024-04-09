@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using Unity.VisualScripting;
+
 using UnityEngine;
 
 
@@ -14,12 +17,14 @@ public class EnemyAttackState : EnemyAbilityState
     public override void AnimationFinishTrigger()
     {
         base.AnimationFinishTrigger();
+        stateMachine.ChangeState(enemy.IdleState);
+        Debug.Log("Finish trigger");
     }
 
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
-        stateMachine.ChangeState(enemy.IdleState);
+        enemy.Attack();
     }
 
     public override void DoChecks()
@@ -48,14 +53,7 @@ public class EnemyAttackState : EnemyAbilityState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (!enemy.isCooldown)
-        {
-            enemy.StartAttackCooldown(enemyData.attackCooldown);
-        }
-        if (!isPlayerInAttackRange)
-        {
-            stateMachine.ChangeState(enemy.IdleState);
-        }
+        
         
     }
 

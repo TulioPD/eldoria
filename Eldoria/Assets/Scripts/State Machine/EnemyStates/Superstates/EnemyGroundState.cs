@@ -53,9 +53,30 @@ public class EnemyGroundState : EnemyState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (playerInAttackRange)
+        if (enemy.CheckPlayerInMinAggroRange())
+        {
+            if ((enemy.FindPlayerPosition().x - enemy.transform.position.x) > 0 && enemy.FacingDirection == 1)
+            {
+                enemy.Flip();
+                enemy.FacingDirection = -1;
+            }
+            else if ((enemy.FindPlayerPosition().x - enemy.transform.position.x) < 0 && enemy.FacingDirection == -1)
+            {
+                enemy.Flip();
+                enemy.FacingDirection = 1;
+            }
+            if (!enemy.CheckPlayerInMaxAttackRange()&&!enemy.CheckForWall())
+            {
+                stateMachine.ChangeState(enemy.MoveState);
+            }
+        }
+        if (playerInAttackRange && !enemy.isCooldown )
         {
             stateMachine.ChangeState(enemy.AttackState);
+        }
+        else if (enemy.isCooldown&&playerInAttackRange&&enemy.CheckPlayerInMinAggroRange())
+        {
+            stateMachine.ChangeState(enemy.IdleState);
         }
     }
 

@@ -14,18 +14,25 @@ public class Projectile : MonoBehaviour
         movementDirection = direction.normalized;
         this.shooterTag = shooterTag;
         lifetime = projectileData.lifeTime;
+
+        float scaleX = Mathf.Sign(-direction.x);
+        transform.localScale = new Vector3(scaleX, 1f, 1f);
     }
+
 
     public void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        SetVelocityX(projectileData.movementVelocity);
+    }
+
+    private void Start()
+    {
+        rb.velocity = movementDirection * projectileData.movementVelocity;
+        Debug.Log("projectile direction" + movementDirection);
     }
 
     private void Update()
     {
-        rb.MovePosition(rb.position + movementDirection * projectileData.movementVelocity * Time.deltaTime);
-
         lifetime -= Time.deltaTime;
         if (lifetime <= 0)
         {
@@ -35,7 +42,7 @@ public class Projectile : MonoBehaviour
 
     private void SetVelocityX(float velocity)
     {
-        rb.velocity = new Vector2(velocity, rb.velocity.y);
+        rb.velocity = movementDirection * projectileData.movementVelocity;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -50,6 +57,15 @@ public class Projectile : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        else if (other.CompareTag("Ground"))
+        {
+            Impact();
+        }
     }
 
+    private void Impact()
+    {
+        Destroy(gameObject);
+    }
 }
+

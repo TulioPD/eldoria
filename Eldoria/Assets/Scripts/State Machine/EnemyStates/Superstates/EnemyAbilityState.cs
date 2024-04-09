@@ -47,7 +47,7 @@ public class EnemyAbilityState : EnemyState
         base.LogicUpdate();
         if(isAbilityDone)
         {
-            if(isGrounded&&enemy.CurrentVelocity.y<.01f)
+            if(isGrounded&&enemy.CurrentVelocity.y<.01f&&enemy.isCooldown)
             {
                 stateMachine.ChangeState(enemy.IdleState);
             } else
