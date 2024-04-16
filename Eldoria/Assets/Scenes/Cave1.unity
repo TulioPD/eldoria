@@ -89475,10 +89475,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 821815547128037797, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}
-      propertyPath: coinText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2112139366473094573, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.66
@@ -89517,10 +89513,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2112139366473094573, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2531944444275900139, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7298242515944297491, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}

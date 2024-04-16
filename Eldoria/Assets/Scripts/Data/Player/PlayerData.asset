@@ -16,6 +16,7 @@ MonoBehaviour:
   jumpVelocity: 10
   amountOfJumps: 1
   arrowPrefab: {fileID: 7318150470393164194, guid: 53a8458ab452b1041a97cc558bdec39f, type: 3}
+  currentSkill: 0
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 0.5
   wallSlideVelocity: 3
@@ -23,7 +24,7 @@ MonoBehaviour:
   startOffset: {x: 0.3, y: 2.37}
   stopOffset: {x: 0, y: 0.3}
   groundCheckRadius: 0.3
-  wallCheckDistance: 0.5
+  wallCheckDistance: 0.9
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
