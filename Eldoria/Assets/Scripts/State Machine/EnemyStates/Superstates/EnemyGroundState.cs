@@ -23,7 +23,7 @@ public class EnemyGroundState : EnemyState
     public override void DoChecks()
     {
         base.DoChecks();
-        if (!enemy.CheckPlayerInCloseRangeAction()&&enemy.CheckPlayerInMaxAttackRange())
+        if (enemy.CheckPlayerInMaxAttackRange())
         {
             playerInAttackRange = true;
             Debug.Log("Player in attack range");

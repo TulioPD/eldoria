@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e776dd2a47940b41bc6ae51a2b9a6f1, type: 3}
-  m_Name: BigCultistData
+  m_Name: BoDData
   m_EditorClassIdentifier: 
-  id: 2
-  maxHealth: 100
-  movementVelocity: 1
-  attackRange: 0
+  id: 3
+  maxHealth: 200
+  movementVelocity: 1.5
+  attackRange: 5
   basicDamage: 30
   lifeTime: 0
   nextAttackTime: 0
   mitigation: 0
-  attackRadius: 2.43
+  attackRadius: 5.9
   attackDamage: 30
   attackRate: 5
   attackCooldown: 5
@@ -30,12 +30,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   dieTime: 0
-  minAgroDistance: 10
-  wallCheckDistance: 0
+  minAgroDistance: 15.23
+  wallCheckDistance: 1.26
   ledgeCheckDistance: 0
   groundCheckDistance: 0
-  closeRangeActionRadius: 2
+  closeRangeActionRadius: 11.72
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
-  sightAngle: 45
+    m_Bits: 0
+  sightAngle: 2.6

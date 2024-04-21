@@ -103,12 +103,12 @@ public class Enemy : Creature
     {
         if (!isCooldown)
     {
-        Debug.Log("Enemy attacking");
+        //Debug.Log("Enemy attacking");
         StartAttackCooldown(enemyData.attackCooldown);
     }
     else
     {
-        Debug.Log("Attack on cooldown");
+        //Debug.Log("Attack on cooldown");
     }
     }
     public void StartAttackCooldown(float cooldownDuration)
@@ -131,10 +131,10 @@ public class Enemy : Creature
     {
         if (CheckPlayerInSight())
         {
-            Debug.Log("true");
+            //Debug.Log("true");
             return true;
         }
-        Debug.Log("false");
+        //Debug.Log("false");
         return false;
     }
     public bool CheckPlayerInSight()
@@ -147,14 +147,14 @@ public class Enemy : Creature
 
     if (CheckPlayerInMinAggroRange())
     {
-            Debug.Log("agro");
+            //Debug.Log("agro");
         Vector2 enemyToPlayer = (FindPlayerPosition() - (Vector2)(transform.position+Vector3.up)).normalized;
 
         // Check if player is within sight angle
         float angleToPlayer = Vector2.Angle(transform.right * transform.localScale.x, enemyToPlayer);
         if (angleToPlayer <= enemyData.sightAngle / 2f)
         {
-                Debug.Log(" ang");
+                //Debug.Log(" ang");
                 // Check if player is within sight range
                 RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position+Vector3.up, enemyToPlayer, enemyData.minAgroDistance, enemyData.whatIsPlayer);
 
@@ -163,13 +163,13 @@ public class Enemy : Creature
             {
                 if (hit.collider != null && hit.collider.CompareTag("Player"))
                 {
-                        Debug.Log("1");
+                        //Debug.Log("1");
                         return true;
                 }
                 else if (hit.collider != null && !hit.collider.isTrigger)
                 {
                         // An obstacle is blocking the line of sight
-                        Debug.Log("2");
+                        //Debug.Log("2");
                     return false;
                         
                 }
@@ -178,9 +178,9 @@ public class Enemy : Creature
             // If no player is detected directly but no obstacles are blocking the line of sight
             return false;
         }
-            Debug.Log("no ang");
+            //Debug.Log("no ang");
     }
-        Debug.Log("no agro");
+        //Debug.Log("no agro");
         return false;
 }
 
@@ -236,18 +236,18 @@ public class Enemy : Creature
         if (CheckPlayerInMinAggroRange())
         {
             Vector2 playerPosition = FindPlayerPosition();
-            enemyToPlayer = (playerPosition - (Vector2)(transform.position + Vector3.up )).normalized;
+            enemyToPlayer = (playerPosition - (Vector2)(transform.position + Vector3.up)).normalized;
 
             // Draw sight area
             float halfSightAngle = enemyData.sightAngle / 2f;
             Vector2 leftRayDirection = Quaternion.Euler(0, 0, -halfSightAngle) * enemyToPlayer;
             Vector2 rightRayDirection = Quaternion.Euler(0, 0, halfSightAngle) * enemyToPlayer;
-            Gizmos.DrawRay(transform.position + Vector3.up , leftRayDirection * enemyData.minAgroDistance);
+            Gizmos.DrawRay(transform.position + Vector3.up, leftRayDirection * enemyData.minAgroDistance);
             Gizmos.DrawRay(transform.position + Vector3.up, rightRayDirection * enemyData.minAgroDistance);
         }
 
         // Draw circular aggro range
-        Gizmos.DrawWireSphere(transform.position, enemyData.minAgroDistance);
+        //Gizmos.DrawWireSphere(transform.position, enemyData.minAgroDistance);
 
         // Draw other gizmos
         DrawOtherGizmos();
