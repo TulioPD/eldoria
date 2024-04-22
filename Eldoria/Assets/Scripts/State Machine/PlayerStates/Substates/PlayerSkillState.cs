@@ -12,8 +12,8 @@ public class PlayerSkillState : PlayerAbilityState
     public override void AnimationFinishTrigger()
     {
         base.AnimationFinishTrigger();
+        //stateMachine.ChangeState(player.IdleState);
         isAbilityDone = true;
-        stateMachine.ChangeState(player.IdleState);
     }
 
     public override void AnimationTrigger()
