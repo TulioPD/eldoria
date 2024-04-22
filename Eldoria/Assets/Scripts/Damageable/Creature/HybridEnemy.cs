@@ -33,7 +33,7 @@ public class HybridEnemy : MeleeEnemy1
 
         if (Animator.GetBool("dead"))
         {
-            ScreenFader.Instance.FadeToBlack(2f);
+            ScreenFader.Instance.FadeToBlack(1f);
 
             TimerManager.Instance.StartTimer(2f, () =>
             {
