@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BigCultistData
   m_EditorClassIdentifier: 
   id: 2
-  maxHealth: 100
+  maxHealth: 50
   movementVelocity: 1
   attackRange: 0
-  basicDamage: 30
+  basicDamage: 15
   lifeTime: 0
   nextAttackTime: 0
   mitigation: 0
@@ -31,11 +31,11 @@ MonoBehaviour:
     m_Bits: 8
   dieTime: 0
   minAgroDistance: 10
-  wallCheckDistance: 0
+  wallCheckDistance: 1.26
   ledgeCheckDistance: 0
   groundCheckDistance: 0
   closeRangeActionRadius: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  sightAngle: 45
+  sightAngle: 2.6

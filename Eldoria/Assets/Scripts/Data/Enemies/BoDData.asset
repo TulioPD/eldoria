@@ -16,7 +16,7 @@ MonoBehaviour:
   maxHealth: 200
   movementVelocity: 1.5
   attackRange: 5
-  basicDamage: 30
+  basicDamage: 20
   lifeTime: 0
   nextAttackTime: 0
   mitigation: 0

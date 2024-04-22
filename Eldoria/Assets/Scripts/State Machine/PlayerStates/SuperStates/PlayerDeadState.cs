@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeadState : PlayerState
 {
@@ -16,6 +17,7 @@ public class PlayerDeadState : PlayerState
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
+        player.gameObject.SetActive(false);
     }
 
     public override void DoChecks()
@@ -27,7 +29,12 @@ public class PlayerDeadState : PlayerState
     {
         base.Enter();
         //disable player
-        player.gameObject.SetActive(false);
+        ScreenFader.Instance.FadeToBlack(2f);
+
+        TimerManager.Instance.StartTimer(2f, () =>
+        {
+            SceneManager.LoadScene("MainMenu");
+        });
     }
 
     public override void Exit()

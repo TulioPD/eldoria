@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HybridEnemy : MeleeEnemy1
 {
@@ -29,17 +30,26 @@ public class HybridEnemy : MeleeEnemy1
     protected override void Update()
     {
         base.Update();
-        if (CheckPlayerInCloseRangeAction() && !CheckPlayerInMaxAttackRange()&&!isRangedAttackOnCooldown)
+
+        if (Animator.GetBool("dead"))
         {
-            Debug.Log("Can cast");
+            ScreenFader.Instance.FadeToBlack(2f);
+
+            TimerManager.Instance.StartTimer(2f, () =>
+            {
+                SceneManager.LoadScene("MainMenu");
+            });
+        }
+
+        if (CheckPlayerInCloseRangeAction() && !CheckPlayerInMaxAttackRange() && !isRangedAttackOnCooldown)
+        {
             canCast = true;
             StateMachine.ChangeState(CastState);
             StartRangedAttackCooldown(rangedAttackCooldown);
         }
-        else if(CheckPlayerInMaxAttackRange())
+        else if (CheckPlayerInMaxAttackRange())
         {
             canCast = false;
-            Debug.Log("Can not cast");
         }
     }
 

@@ -28,7 +28,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  maxHealth: 100
+  maxHealth: 125
   currentHealth: 0
   basicDamage: 10
   lifeTime: 2

@@ -82,7 +82,6 @@ public class Player : Creature
         {
             healthBar.SetMaxHealth(maxHealth);
         }
-
     }
 
     protected override void Update()

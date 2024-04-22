@@ -89329,6 +89329,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2875681853424695047, guid: d3d37f5f337ab364b9faca3042d0ecf1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875681853424695047, guid: d3d37f5f337ab364b9faca3042d0ecf1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3748916272333816687, guid: d3d37f5f337ab364b9faca3042d0ecf1, type: 3}
       propertyPath: m_Name
       value: Cultist 1
@@ -89336,6 +89344,10 @@ PrefabInstance:
     - target: {fileID: 3748916272333816687, guid: d3d37f5f337ab364b9faca3042d0ecf1, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181536984451919230, guid: d3d37f5f337ab364b9faca3042d0ecf1, type: 3}
+      propertyPath: m_Value
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -89513,6 +89525,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2112139366473094573, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531944444275900139, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7298242515944297491, guid: 72977efb2286a4f4fad20de0feadeeba, type: 3}

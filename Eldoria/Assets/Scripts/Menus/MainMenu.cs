@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Forest1");
     }
 
     public void QuitGame()
@@ -17,5 +17,10 @@ public class MainMenu : MonoBehaviour
     public void Settings()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("SettingsMenu");
+    }
+
+    public void ControlsMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Guide");
     }
 }

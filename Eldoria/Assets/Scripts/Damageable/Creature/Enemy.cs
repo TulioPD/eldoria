@@ -64,6 +64,10 @@ public class Enemy : Creature
         StateMachine.Initialize(IdleState);
         this.maxHealth = enemyData.maxHealth;
         this.health = maxHealth;
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
     }
     protected override void Update()
     {

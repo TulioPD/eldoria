@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CultistData
   m_EditorClassIdentifier: 
   id: 1
-  maxHealth: 20
+  maxHealth: 30
   movementVelocity: 1
   attackRange: 5
   basicDamage: 10

@@ -44,14 +44,14 @@ public class PlayerGroundState : PlayerState
         timeSinceLastAttack += Time.deltaTime;
         //Debug.Log(timeSinceLastAttack);
 
-        if (player.InputHandler.AttackInput&&timeSinceLastAttack>=playerData.attackRate)
+        if (player.InputHandler.AttackInput && timeSinceLastAttack>=playerData.attackRate)
         {
             player.SetVelocityX(0);
             stateMachine.ChangeState(player.AttackState);
             timeSinceLastAttack = 0f;
         }
 
-        if (player.InputHandler.SkillInput)
+        if (player.InputHandler.SkillInput && timeSinceLastAttack >= playerData.attackRate)
         {
             player.SetVelocityX(0);
             stateMachine.ChangeState(player.SkillState);
