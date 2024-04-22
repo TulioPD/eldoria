@@ -16,7 +16,6 @@ public class EnemyDeadState : EnemyState
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
-        enemy.Die(0f);
     }
 
     public override void DoChecks()
@@ -27,6 +26,7 @@ public class EnemyDeadState : EnemyState
     public override void Enter()
     {
         base.Enter();
+        enemy.Die(2f);
     }
 
     public override void Exit()
