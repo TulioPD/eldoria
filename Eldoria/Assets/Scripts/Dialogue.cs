@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class NPCDialogue : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -10,36 +10,39 @@ public class NPCDialogue : MonoBehaviour
     private int index;
     private bool isTyping = false;
 
-    void OnTriggerEnter2D(Collider2D other)
+
+    private void Start()
     {
-        if (other.CompareTag("Player"))
-        {
-            StartDialogue();
-        }
+        textComponent.text=string.Empty;
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    private void Update()
     {
-        if (other.CompareTag("Player"))
-        {
-            EndDialogue();
+        if (Input.GetKeyDown(KeyCode.E)){
+            if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
         }
     }
-
-    void StartDialogue()
+    public void StartDialogue()
     {
         index = 0;
-        textComponent.text = string.Empty;
+        //textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         StopAllCoroutines();
-        gameObject.SetActive(false);
     }
 
-    IEnumerator TypeLine()
+    private IEnumerator TypeLine()
     {
         isTyping = true;
         foreach (char c in lines[index].ToCharArray())
@@ -50,7 +53,7 @@ public class NPCDialogue : MonoBehaviour
         isTyping = false;
     }
 
-    void NextLine()
+    private void NextLine()
     {
         if (index < lines.Length - 1)
         {
