@@ -1,1 +1,1 @@
-# minigame-2d
+# Basic mechanics for platformer in 2D made with Unity
