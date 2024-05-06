@@ -26,7 +26,6 @@ public class EnemyGroundState : EnemyState
         if (enemy.CheckPlayerInMaxAttackRange())
         {
             playerInAttackRange = true;
-            Debug.Log("Player in attack range");
         }
         else
         {

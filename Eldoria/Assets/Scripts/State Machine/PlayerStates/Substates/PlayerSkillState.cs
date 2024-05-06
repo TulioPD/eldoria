@@ -19,8 +19,6 @@ public class PlayerSkillState : PlayerAbilityState
     public override void AnimationTrigger()
     {
         base.AnimationTrigger();
-        
-        Debug.Log(playerData.currentSkill);
         switch (playerData.currentSkill) 
         {
             case 0: player.MeleeAttack(); break;

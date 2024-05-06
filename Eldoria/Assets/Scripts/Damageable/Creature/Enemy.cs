@@ -228,53 +228,53 @@ public class Enemy : Creature
     }
     #endregion
     #region Gizmos
-    private void OnDrawGizmos()
-    {
-        if (enemyData == null)
-            return;
+    //private void OnDrawGizmos()
+    //{
+    //    if (enemyData == null)
+    //        return;
 
-        Gizmos.color = Color.yellow;
+    //    Gizmos.color = Color.yellow;
 
-        // Check if player is within aggro range
-        Vector2 enemyToPlayer = new Vector2(-FacingDirection, 0);
-        if (CheckPlayerInMinAggroRange())
-        {
-            Vector2 playerPosition = FindPlayerPosition();
-            enemyToPlayer = (playerPosition - (Vector2)(transform.position + Vector3.up)).normalized;
+    //    // Check if player is within aggro range
+    //    Vector2 enemyToPlayer = new Vector2(-FacingDirection, 0);
+    //    if (CheckPlayerInMinAggroRange())
+    //    {
+    //        Vector2 playerPosition = FindPlayerPosition();
+    //        enemyToPlayer = (playerPosition - (Vector2)(transform.position + Vector3.up)).normalized;
 
-            // Draw sight area
-            float halfSightAngle = enemyData.sightAngle / 2f;
-            Vector2 leftRayDirection = Quaternion.Euler(0, 0, -halfSightAngle) * enemyToPlayer;
-            Vector2 rightRayDirection = Quaternion.Euler(0, 0, halfSightAngle) * enemyToPlayer;
-            Gizmos.DrawRay(transform.position + Vector3.up, leftRayDirection * enemyData.minAgroDistance);
-            Gizmos.DrawRay(transform.position + Vector3.up, rightRayDirection * enemyData.minAgroDistance);
-        }
+    //        // Draw sight area
+    //        float halfSightAngle = enemyData.sightAngle / 2f;
+    //        Vector2 leftRayDirection = Quaternion.Euler(0, 0, -halfSightAngle) * enemyToPlayer;
+    //        Vector2 rightRayDirection = Quaternion.Euler(0, 0, halfSightAngle) * enemyToPlayer;
+    //        Gizmos.DrawRay(transform.position + Vector3.up, leftRayDirection * enemyData.minAgroDistance);
+    //        Gizmos.DrawRay(transform.position + Vector3.up, rightRayDirection * enemyData.minAgroDistance);
+    //    }
 
-        // Draw circular aggro range
-        //Gizmos.DrawWireSphere(transform.position, enemyData.minAgroDistance);
+    //    // Draw circular aggro range
+    //    //Gizmos.DrawWireSphere(transform.position, enemyData.minAgroDistance);
 
-        // Draw other gizmos
-        DrawOtherGizmos();
-    }
+    //    // Draw other gizmos
+    //    DrawOtherGizmos();
+    //}
 
-    private void DrawOtherGizmos()
-    {
-        // min aggro range
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
+    //private void DrawOtherGizmos()
+    //{
+    //    // min aggro range
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.minAgroDistance);
 
-        // wall check
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
+    //    // wall check
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * -FacingDirection * enemyData.wallCheckDistance);
 
-        // Player in max Aggro range
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
+    //    // Player in max Aggro range
+    //    Gizmos.color = Color.blue;
+    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.attackRadius);
 
-        // Player in close range action
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
-    }
+    //    // Player in close range action
+    //    Gizmos.color = Color.green;
+    //    Gizmos.DrawWireSphere(playerCheck.position, enemyData.closeRangeActionRadius);
+    //}
     #endregion
     public override void TakeDamage(int damage)
     {

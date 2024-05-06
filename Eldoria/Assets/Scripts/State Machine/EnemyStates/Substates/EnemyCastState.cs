@@ -30,7 +30,6 @@ public class EnemyCastState : EnemyAbilityState
     {
         base.Enter();
         enemy.SetVelocityX(0);
-        Debug.Log("CAST STATE");
 
     }
 
