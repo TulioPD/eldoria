@@ -78,7 +78,7 @@ public class PlayerAirState : PlayerState
             player.CheckIfShouldFlip(xInput);
             player.SetVelocityX(playerData.movementVelocity * xInput);
             player.Animator.SetFloat("yVelocity",player.CurrentVelocity.y);
-            player.SetVelocityY(player.CurrentVelocity.y - .03f);
+            player.SetVelocityY(player.CurrentVelocity.y - .05f);
         }
     }
     public override void PhysicsUpdate()
