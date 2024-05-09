@@ -47,4 +47,14 @@ public class PlayerData : ScriptableObject
     public float nextAttackTime = 0f;
     public float attackRange = 0.5f;
 
+    public string Serialize()
+    {
+        return JsonUtility.ToJson(this);
+    }
+
+    public static PlayerData Deserialize(string json)
+    {
+        return JsonUtility.FromJson<PlayerData>(json);
+    }
+
 }

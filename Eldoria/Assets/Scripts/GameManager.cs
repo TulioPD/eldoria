@@ -1,12 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void RestartLevel()
+    public static GameManager Instance;
+
+    [SerializeField]
+    private PlayerData playerData;
+
+    public PlayerData PlayerData
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        get { return playerData; }
+        private set { playerData = value; }
     }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        if (playerData == null)
+        {
+            playerData = ScriptableObject.CreateInstance<PlayerData>();
+        }
+    }
+
 }
+
