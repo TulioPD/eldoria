@@ -15,7 +15,6 @@ public class PlayerData : ScriptableObject
     [Header("Attack state")]
     public GameObject arrowPrefab;
     public int currentSkill;
-    //public int basicDamage = 10;
 
     [Header("In Air State")]
     public float coyoteTime = 0.2f;
