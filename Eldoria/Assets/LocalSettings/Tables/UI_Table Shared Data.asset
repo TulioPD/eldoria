@@ -139,6 +139,10 @@ MonoBehaviour:
     m_Key: CLIMBTEXT
     m_Metadata:
       m_Items: []
+  - m_Id: 17656373202944
+    m_Key: LANGUAGE
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

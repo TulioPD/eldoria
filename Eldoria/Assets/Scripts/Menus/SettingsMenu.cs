@@ -2,35 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization.Settings;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public enum FullscreenMode
-    {
-        FullScreen,
-        Windowed,
-    }
-    public TMP_Dropdown resolutionDropdown;
-    Resolution[] resolutions;
+    public TMP_Dropdown resolutionDropdown, qualityDropdown, languageDropdown;
 
-    [HideInInspector] public int currentScreenWidth;
-    [HideInInspector] public int currentScreenHeight;
-
-
-    [HideInInspector] public FullscreenMode currentFullscreenMode;
+    private Resolution[] resolutions;
 
     private void Start()
+    {
+        InitializeResolutionsDropdown();
+        InitializeQualityDropdown();
+        InitializeLanguageDropdown();
+    }
+
+    private void InitializeResolutionsDropdown()
     {
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
-        for (int i =0; i< resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
-            string option= resolutions[i].width+ "x" + resolutions[i].height;
+            string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height==Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
             }
@@ -38,7 +36,50 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-        SetFullscreenMode(FullscreenMode.FullScreen);
+    }
+
+    private void InitializeQualityDropdown()
+    {
+        string[] qualityLevels = QualitySettings.names;
+        qualityDropdown.ClearOptions();
+        qualityDropdown.AddOptions(new List<string>(qualityLevels));
+        qualityDropdown.value = QualitySettings.GetQualityLevel();
+        qualityDropdown.RefreshShownValue();
+    }
+
+    private void InitializeLanguageDropdown()
+    {
+        if (LocalizationSettings.AvailableLocales.Locales.Count > 0)
+        {
+            List<string> languages = new List<string>();
+            foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
+            {
+                languages.Add(locale.name);
+            }
+            languageDropdown.ClearOptions();
+            languageDropdown.AddOptions(languages);
+
+            int selectedIndex = GetSelectedLocaleIndex();
+            languageDropdown.value = selectedIndex;
+            languageDropdown.RefreshShownValue();
+        }
+        else
+        {
+            Debug.LogWarning("No languages available in LocalizationSettings.");
+        }
+    }
+
+    private int GetSelectedLocaleIndex()
+    {
+        var selectedLocaleId = LocalizationSettings.SelectedLocale.Identifier.Code;
+        for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; i++)
+        {
+            if (LocalizationSettings.AvailableLocales.Locales[i].Identifier.Code == selectedLocaleId)
+            {
+                return i;
+            }
+        }
+        return 0;
     }
 
     public void SetResolution(int resolutionIndex)
@@ -52,32 +93,15 @@ public class SettingsMenu : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void SetFullscreenMode(FullscreenMode mode)
-    {
-        switch (mode)
-        {
-            case FullscreenMode.FullScreen:
-                Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
-                break;
-            case FullscreenMode.Windowed:
-                Screen.fullScreenMode = FullScreenMode.Windowed;
-                break;
-        }
-
-        currentFullscreenMode = mode;
-    }
-
     public void ToggleFullscreen()
     {
-        switch (currentFullscreenMode)
-        {
-            case FullscreenMode.FullScreen:
-                SetFullscreenMode(FullscreenMode.Windowed);
-                break;
-            case FullscreenMode.Windowed:
-                SetFullscreenMode(FullscreenMode.FullScreen);
-                break;
-        }
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    public void ChangeLanguage(int index)
+    {
+        var selectedLocaleId = LocalizationSettings.AvailableLocales.Locales[index].Identifier.Code;
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.GetLocale(selectedLocaleId);
     }
 
     public void Back()
