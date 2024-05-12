@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_Table_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: eeb68d382a15e3e469ad5b89654786c1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 48852783104
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1304392519680
+    m_Localized: Salir del juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1484638539776
+    m_Localized: "Configuraci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1504641175552
+    m_Localized: Controles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4191784947712
+    m_Localized: "Gr\xE1ficos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4557016551424
+    m_Localized: "Atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4628156141568
+    m_Localized: Pantalla completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4322441711616
+    m_Localized: Alto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4319858020352
+    m_Localized: Medio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4312169861120
+    m_Localized: Bajo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4505615355904
+    m_Localized: "Resoluci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7650173145088
+    m_Localized: Movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7708385890304
+    m_Localized: Ataque a distancia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7793479929856
+    m_Localized: Ataque cuerpo a cuerpo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8128218943488
+    m_Localized: "Avanzar di\xE1logo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8260121415680
+    m_Localized: Trepar un saliente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8381886255104
+    m_Localized: Soltarse de un saliente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8437121044480
+    m_Localized: Saltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8474500681728
+    m_Localized: Barra espaciadora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8493425381376
+    m_Localized: '"Flechas direccionales" o "W,A,S,D"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8643178811392
+    m_Localized: '"S" mientras agarras un saliente'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8698241634304
+    m_Localized: '"A"o "D" mientras agarras un saliente'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
