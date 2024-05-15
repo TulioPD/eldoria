@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI_Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI_Table
+  m_TableCollectionNameGuidString: eeb68d382a15e3e469ad5b89654786c1
+  m_Entries:
+  - m_Id: 48852783104
+    m_Key: PLAY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1304392519680
+    m_Key: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1484638539776
+    m_Key: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1504641175552
+    m_Key: CONTROLS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4191784947712
+    m_Key: GRAPHICS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4312169861120
+    m_Key: LOW
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4319858020352
+    m_Key: MEDIUM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4322441711616
+    m_Key: HIGH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4415890804736
+    m_Key: EXAMPLE1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4422228398080
+    m_Key: EXAMPLE2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4505615355904
+    m_Key: RESOLUTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4557016551424
+    m_Key: BACK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4628156141568
+    m_Key: SCREEN-FULL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7650173145088
+    m_Key: MOVEMENT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7708385890304
+    m_Key: ATTACK01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7793479929856
+    m_Key: ATTACK02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7815420334080
+    m_Key: ATTACK03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7832906387456
+    m_Key: ATTACK04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8004000436224
+    m_Key: ATTACK05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8028860076032
+    m_Key: ATTACK06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8043930210304
+    m_Key: ATTACK07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8058627051520
+    m_Key: ATTACK08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8083591548928
+    m_Key: ATTACK09
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8128218943488
+    m_Key: DIALOGUE-ADVANCE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8260121415680
+    m_Key: LEDGE-CLIMB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8381886255104
+    m_Key: LEDGE-DROP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8437121044480
+    m_Key: JUMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8474500681728
+    m_Key: SPACEBAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8493425381376
+    m_Key: DIRECTIONAL-KEYS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8643178811392
+    m_Key: DROPTEXT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8698241634304
+    m_Key: CLIMBTEXT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17656373202944
+    m_Key: LANGUAGE
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 926178288633118768
+  references:
+    version: 2
+    RefIds:
+    - rid: 926178288633118768
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1715469697536

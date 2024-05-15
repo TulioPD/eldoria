@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Dialogue_Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Dialogue_Table
+  m_TableCollectionNameGuidString: 01765787aa7fb6f4b80166e4dee919e3
+  m_Entries:
+  - m_Id: 11183738880
+    m_Key: TEST1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192956485632
+    m_Key: TEST2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 195573731328
+    m_Key: TEST3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2133581254656
+    m_Key: MERCHANT-1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2136563404800
+    m_Key: MERCHANT-2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139310673920
+    m_Key: MERCHANT-3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 926178378359767042
+  references:
+    version: 2
+    RefIds:
+    - rid: 926178378359767042
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1715811160396
