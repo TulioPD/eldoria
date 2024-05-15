@@ -63,10 +63,6 @@ public class SettingsMenu : MonoBehaviour
             languageDropdown.value = selectedIndex;
             languageDropdown.RefreshShownValue();
         }
-        else
-        {
-            Debug.LogWarning("No languages available in LocalizationSettings.");
-        }
     }
 
     private int GetSelectedLocaleIndex()

@@ -30,7 +30,6 @@ public class RangedEnemy1 : Enemy
         base.Attack();
         if (enemyData == null || attackPoint == null)
         {
-            //Debug.LogError("Data or attackPoint is null.");
             return;
         }
 
@@ -39,7 +38,6 @@ public class RangedEnemy1 : Enemy
         GameObject firebolt = Instantiate(projectilePrefab, attackPoint.transform.position, Quaternion.identity);
         if (firebolt == null)
         {
-            //Debug.LogError("Failed to instantiate projectilePrefab.");
             return;
         }
 

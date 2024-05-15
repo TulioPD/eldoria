@@ -22,7 +22,7 @@ public class PlayerSkillState : PlayerAbilityState
         switch (playerData.currentSkill) 
         {
             case 0: player.MeleeAttack(); break;
-            default: Debug.Log("NO SKILL ASSIGNED"); break;
+            default: break;
         }
 
     }

@@ -28,7 +28,6 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         rb.velocity = movementDirection * projectileData.movementVelocity;
-        //Debug.Log("projectile direction" + movementDirection);
     }
 
     private void Update()

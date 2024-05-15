@@ -18,7 +18,6 @@ public class EnemyAttackState : EnemyAbilityState
     {
         base.AnimationFinishTrigger();
         stateMachine.ChangeState(enemy.IdleState);
-        //Debug.Log("Finish trigger");
     }
 
     public override void AnimationTrigger()

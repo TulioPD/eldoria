@@ -54,7 +54,6 @@ public class PlayerLedgeClimbState : PlayerState
         if (isClimbing)
         {
             player.transform.position = stopPosition;
-            //Debug.Log("Climbing ledge");
             isClimbing = false;
         }
     }

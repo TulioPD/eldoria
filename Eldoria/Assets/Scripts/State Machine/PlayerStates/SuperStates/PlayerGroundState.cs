@@ -42,7 +42,6 @@ public class PlayerGroundState : PlayerState
         jumpInput = player.InputHandler.JumpInput;
 
         timeSinceLastAttack += Time.deltaTime;
-        //Debug.Log(timeSinceLastAttack);
 
         if (player.InputHandler.AttackInput && timeSinceLastAttack>=playerData.attackRate)
         {
