@@ -102,3 +102,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 *.swp
+
+# Ignore Unity Addressable Assets data files
+/[Aa]ssets/AddressableAssetsData/
