@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 222245923}
   - component: {fileID: 222245922}
   - component: {fileID: 222245921}
+  - component: {fileID: 222245924}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: Untagged
@@ -525,13 +526,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 188414852}
-  lines:
-  - Para superar esta prueba necesitas eliminar a un monstruo que se encuentra  en
-    la cima de esta cueva.
-  - "Dentro de la cueva existen otros enemigos que podr\xE1s usar para practicar
-    hasta que te sientas m\xE1s c\xF3modo"
-  - Buena suerte!
+  localizedLines:
+  - m_TableReference:
+      m_TableCollectionName: GUID:01765787aa7fb6f4b80166e4dee919e3
+    m_TableEntryReference:
+      m_KeyId: 2133581254656
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:01765787aa7fb6f4b80166e4dee919e3
+    m_TableEntryReference:
+      m_KeyId: 2136563404800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:01765787aa7fb6f4b80166e4dee919e3
+    m_TableEntryReference:
+      m_KeyId: 2139310673920
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &222245922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,6 +593,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222245919}
   m_CullTransparentMesh: 1
+--- !u!114 &222245924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222245919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &291198393 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7712177046995577447, guid: d0d0329678d67e64cbe145e8ef0c398d, type: 3}
